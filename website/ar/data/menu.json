@@ -1,0 +1,853 @@
+{
+  "restaurant": {
+    "name": "كافتيريا توداي",
+    "tagline": "طعام طازج. مزاج رائع. اليوم.",
+    "phoneDisplay": "0771 431 6036",
+    "phoneLink": "+9647714316036",
+    "whatsappLink": "9647714316036",
+    "address": "داخل جامعة بغداد، قرب بناية رئاسة الجامعة.",
+    "currency": "د.ع"
+  },
+  "categories": [
+    {
+      "id": "breakfast",
+      "name": "الفطور",
+      "icon": "🍳",
+      "items": [
+        {
+          "id": "makhlama-iraqi-meat",
+          "name": "مخلمة لحم عراقي",
+          "price": "3000",
+          "image": "../assets/menu-images/makhlama-iraqi-meat.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم عراقي",
+            "طماطة",
+            "بطاطا",
+            "بيض",
+            "طرشي",
+            "فنگر",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "makhlama-today",
+          "name": "مخلمة تــودي",
+          "price": "5000",
+          "image": "../assets/menu-images/makhlama-today.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم عراقي",
+            "بصل",
+            "بيض",
+            "طرشي",
+            "فنگر",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "makhlama-meat-shawarma",
+          "name": "مخلمة شاورما لحم",
+          "price": "5000",
+          "image": "../assets/menu-images/makhlama-meat-shawarma.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "طماطة",
+            "بيض",
+            "طرشي",
+            "فنگر",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "iraqi-pastrami",
+          "name": "باسطرمة عراقي",
+          "price": "5000",
+          "image": "../assets/menu-images/iraqi-pastrami.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "بيض",
+            "طرشي",
+            "فنگر",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "eggs-iraqi-burger",
+          "name": "بيض وبرگر عراقي",
+          "price": "5000",
+          "image": "../assets/menu-images/eggs-iraqi-burger.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "بيض",
+            "طرشي",
+            "طماطة",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "arooq-plate",
+          "name": "طبق عروگ",
+          "price": "4000",
+          "image": "../assets/menu-images/arooq-plate.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "خضار",
+            "بطاطا",
+            "باذنجان",
+            "طرشي",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "arooq-eggs",
+          "name": "عروگ وبيض",
+          "price": "4000",
+          "image": "../assets/menu-images/arooq-eggs.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "بيض",
+            "طرشي",
+            "فنگر",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "arooq-wrap",
+          "name": "لفة عروگ",
+          "price": "2000",
+          "image": "../assets/menu-images/arooq-wrap.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "طرشي",
+            "سلطة"
+          ]
+        },
+        {
+          "id": "iraqi-meat-kubba",
+          "name": "كبة لحم عراقي",
+          "price": "5000",
+          "image": "../assets/menu-images/iraqi-meat-kubba.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "برغل",
+            "طرشي",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "fried-iraqi-meat-kubba",
+          "name": "كبة لحم عراقي ( قلي )",
+          "price": "5000",
+          "image": "../assets/menu-images/fried-iraqi-meat-kubba.jpeg",
+          "description": "",
+          "ingredients": [
+            "كبة",
+            "بطاطا",
+            "باذنجان",
+            "طرشي",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "lentil-soup",
+          "name": "شوربة عدس",
+          "price": "2000",
+          "image": "../assets/menu-images/lentil-soup.jpeg",
+          "description": "",
+          "ingredients": [
+            "عدس",
+            "طرشي",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
+          "id": "chicken-soup-toast",
+          "name": "حساء دجاج مع التوست",
+          "price": "1500",
+          "image": "../assets/menu-images/chicken-soup-toast.jpeg",
+          "description": "",
+          "ingredients": []
+        }
+      ]
+    },
+    {
+      "id": "western-dishes",
+      "name": "الاطباق الغربية",
+      "icon": "🍽️",
+      "items": [
+        {
+          "id": "meat-shawarma-plate",
+          "name": "طبق شاورما لحم",
+          "price": "8000",
+          "image": "../assets/menu-images/meat-shawarma-plate.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "طرشي",
+            "طماطة",
+            "فنگر",
+            "صوص",
+            "صمون"
+          ]
+        },
+        {
+          "id": "chicken-shawarma-plate",
+          "name": "طبق شاورما دجاج",
+          "price": "6000",
+          "image": "../assets/menu-images/chicken-shawarma-plate.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "طرشي",
+            "طماطة",
+            "فنگر",
+            "صوص",
+            "صمون"
+          ]
+        },
+        {
+          "id": "strips-plate",
+          "name": "طبق ستربس",
+          "price": "6000",
+          "image": "../assets/menu-images/strips-plate.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج مقرمش",
+            "فنگر",
+            "خس",
+            "صوص",
+            "جبن",
+            "صمون"
+          ]
+        },
+        {
+          "id": "filler-plate",
+          "name": "طبق فـلـر",
+          "price": "6000",
+          "image": "../assets/menu-images/filler-plate.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "فنگر",
+            "خس",
+            "صوص",
+            "جبن",
+            "صمون"
+          ]
+        },
+        {
+          "id": "chicken-scallop-plate",
+          "name": "طبق سكالوب",
+          "price": "6000",
+          "image": "../assets/menu-images/chicken-scallop-plate.jpeg",
+          "description": "",
+          "ingredients": [
+            "صدر دجاج",
+            "فنگر",
+            "خس",
+            "صوص",
+            "صمون"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "snacks",
+      "name": "الـسـنـاك",
+      "icon": "🍔",
+      "items": [
+        {
+          "id": "shawarma-laham",
+          "name": "شاورما لحم",
+          "price": "4500",
+          "image": "../assets/menu-images/shawarma-laham.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "طرشي",
+            "طماطة",
+            "صوص"
+          ]
+        },
+        {
+          "id": "shawarma-dajaj",
+          "name": "شاورما دجاج",
+          "price": "3000",
+          "image": "../assets/menu-images/shawarma-dajaj.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "طرشي",
+            "طماطة",
+            "صوص"
+          ]
+        },
+        {
+          "id": "iraqi-meat-burger",
+          "name": "برگر لحم عراقي",
+          "price": "4000",
+          "image": "../assets/menu-images/iraqi-meat-burger.jpeg",
+          "description": "إضافة الجبن + 500",
+          "ingredients": [
+            "لحم",
+            "خس",
+            "طماطة",
+            "فنگر",
+            "صوص"
+          ]
+        },
+        {
+          "id": "iraqi-chicken-burger",
+          "name": "برگر دجاج عراقي",
+          "price": "3000",
+          "image": "../assets/menu-images/iraqi-chicken-burger.jpeg",
+          "description": "إضافة الجبن + 500",
+          "ingredients": [
+            "دجاج",
+            "خس",
+            "طماطة",
+            "فنگر",
+            "صوص"
+          ]
+        },
+        {
+          "id": "strips-sandwich",
+          "name": "سندويج ستربس",
+          "price": "3500",
+          "image": "../assets/menu-images/strips-sandwich.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج مقرمش",
+            "خس",
+            "فنگر",
+            "صوص",
+            "جبن"
+          ]
+        },
+        {
+          "id": "filler-sandwich",
+          "name": "سندويج فــلــر",
+          "price": "3500",
+          "image": "../assets/menu-images/filler-sandwich.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "خس",
+            "فنگر",
+            "صوص",
+            "جبن"
+          ]
+        },
+        {
+          "id": "chicken-scallop",
+          "name": "سكالوب دجاج",
+          "price": "3500",
+          "image": "../assets/menu-images/chicken-scallop.jpeg",
+          "description": "",
+          "ingredients": [
+            "صدر دجاج",
+            "خس",
+            "فنگر",
+            "صوص",
+            "جبن"
+          ]
+        },
+        {
+          "id": "iraqi-meat-strips",
+          "name": "شرائح لحم عراقي",
+          "price": "5000",
+          "image": "../assets/menu-images/iraqi-meat-strips.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "chicken-strips",
+          "name": "شرائح دجاج",
+          "price": "3500",
+          "image": "../assets/menu-images/chicken-strips.jpeg",
+          "description": "",
+          "ingredients": [
+            "صدر دجاج",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "matafi",
+          "name": "مــطــافــي",
+          "price": "3500",
+          "image": "../assets/menu-images/matafi.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج سبايسي",
+            "خس",
+            "فنگر",
+            "صوص",
+            "جبن"
+          ]
+        },
+        {
+          "id": "alfredo-chicken",
+          "name": "الفريدو تشكين",
+          "price": "4000",
+          "image": "../assets/menu-images/alfredo-chicken.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج متبل",
+            "كريمة طبخ",
+            "جبن",
+            "صوص"
+          ]
+        },
+        {
+          "id": "meat-sandwich",
+          "name": "سندويج لحم",
+          "price": "4500",
+          "image": "../assets/menu-images/meat-sandwich.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "round-chicken-sandwich",
+          "name": "سندويج دجاج ( دائري )",
+          "price": "3000",
+          "image": "../assets/menu-images/round-chicken-sandwich.jpeg",
+          "description": "",
+          "ingredients": [
+            "شاورما دجاج",
+            "طرشي",
+            "طماطة",
+            "صوص"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saj",
+      "name": "الصاج",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": "saj-laham",
+          "name": "صاج لحم",
+          "price": "4500",
+          "image": "../assets/menu-images/saj-laham.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "طرشي",
+            "طماطة",
+            "صوص"
+          ]
+        },
+        {
+          "id": "saj-dajaj",
+          "name": "صاج دجاج",
+          "price": "3500",
+          "image": "../assets/menu-images/saj-dajaj.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "طرشي",
+            "طماطة",
+            "صوص"
+          ]
+        },
+        {
+          "id": "saj-iraqi-meat-burger",
+          "name": "صاج برگر لحم عراقي",
+          "price": "4500",
+          "image": "../assets/menu-images/saj-iraqi-meat-burger.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "طرشي",
+            "طماطة",
+            "صوص"
+          ]
+        },
+        {
+          "id": "saj-chicken-burger",
+          "name": "صاج برگر دجاج",
+          "price": "3500",
+          "image": "../assets/menu-images/saj-chicken-burger.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "طرشي",
+            "طماطة",
+            "صوص"
+          ]
+        },
+        {
+          "id": "saj-scallop",
+          "name": "صاج سكالوب",
+          "price": "3500",
+          "image": "../assets/menu-images/saj-scallop.jpeg",
+          "description": "",
+          "ingredients": [
+            "صدر دجاج",
+            "خس",
+            "صوص"
+          ]
+        },
+        {
+          "id": "saj-iraqi-kebab",
+          "name": "صاج كباب عراقي",
+          "price": "4000",
+          "image": "../assets/menu-images/saj-iraqi-kebab.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "بصل",
+            "طماطة",
+            "صوص"
+          ]
+        },
+        {
+          "id": "twister",
+          "name": "تـويـسـتر",
+          "price": "4000",
+          "image": "../assets/menu-images/twister.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج مقرمش",
+            "بطاطا",
+            "خس",
+            "صوص"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "المـعـكرونــة",
+      "icon": "🍝",
+      "items": [
+        {
+          "id": "bechamel-chicken-pasta",
+          "name": "معكرونة بشاميل ودجاج",
+          "price": "3000",
+          "image": "../assets/menu-images/bechamel-chicken-pasta.jpeg",
+          "description": "",
+          "ingredients": [
+            "معكرونة",
+            "كريمة طبخ",
+            "دجاج",
+            "جبن"
+          ]
+        },
+        {
+          "id": "large-bechamel-chicken-pasta",
+          "name": "معكرونة بشاميل ودجاج كبير",
+          "price": "6000",
+          "image": "../assets/menu-images/large-bechamel-chicken-pasta.jpeg",
+          "description": "",
+          "ingredients": [
+            "معكرونة",
+            "كريمة طبخ",
+            "دجاج",
+            "جبن"
+          ]
+        },
+        {
+          "id": "meat-pasta",
+          "name": "معكرونة لحم",
+          "price": "5000",
+          "image": "../assets/menu-images/meat-pasta.jpeg",
+          "description": "",
+          "ingredients": [
+            "معكرونة",
+            "صوص احمر",
+            "لحم",
+            "جبن"
+          ]
+        },
+        {
+          "id": "large-meat-pasta",
+          "name": "معكرونة لحم كبير",
+          "price": "8000",
+          "image": "../assets/menu-images/large-meat-pasta.jpeg",
+          "description": "",
+          "ingredients": [
+            "معكرونة",
+            "صوص احمر",
+            "لحم",
+            "جبن"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finger",
+      "name": "الفنگر",
+      "icon": "🍟",
+      "items": [
+        {
+          "id": "small-finger-cup",
+          "name": "فنگر قدح صغير",
+          "price": "1250",
+          "image": "../assets/menu-images/small-finger-cup.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "medium-finger-plate",
+          "name": "فنگر طبق وسط",
+          "price": "2000",
+          "image": "../assets/menu-images/medium-finger-plate.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "large-finger-plate",
+          "name": "فنگر طبق كبير",
+          "price": "3000",
+          "image": "../assets/menu-images/large-finger-plate.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "small-cheese-finger",
+          "name": "فنگر بالجبن صغير",
+          "price": "2000",
+          "image": "../assets/menu-images/small-cheese-finger.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "large-cheese-finger",
+          "name": "فنگر بالجبن كبير",
+          "price": "4000",
+          "image": "../assets/menu-images/large-cheese-finger.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "meat-shawarma-finger",
+          "name": "فنگر بشاورما لحم",
+          "price": "6000",
+          "image": "../assets/menu-images/meat-shawarma-finger.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "chicken-shawarma-finger",
+          "name": "فنگر بشاورما دجاج",
+          "price": "5000",
+          "image": "../assets/menu-images/chicken-shawarma-finger.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "iraqi-meat-finger",
+          "name": "فنگر باللحم العراقي",
+          "price": "5000",
+          "image": "../assets/menu-images/iraqi-meat-finger.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "today-finger",
+          "name": "فنگر تودي",
+          "price": "5000",
+          "image": "../assets/menu-images/today-finger.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "cheese-bbq-finger",
+          "name": "فنگر جبن وباربكيو",
+          "price": "2500",
+          "image": "../assets/menu-images/cheese-bbq-finger.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "crispy-finger",
+          "name": "فنگر مقرمش",
+          "price": "2500",
+          "image": "../assets/menu-images/crispy-finger.jpeg",
+          "description": "",
+          "ingredients": []
+        }
+      ]
+    },
+    {
+      "id": "rizo",
+      "name": "الريزو",
+      "icon": "🍚",
+      "items": [
+        {
+          "id": "classic-rizo",
+          "name": "ريزو كلاسك",
+          "price": "5000",
+          "image": "../assets/menu-images/classic-rizo.jpeg",
+          "description": "",
+          "ingredients": [
+            "تمن",
+            "دجاج مقرمش",
+            "صوص"
+          ]
+        },
+        {
+          "id": "cheese-rizo",
+          "name": "ريزو بالجبن",
+          "price": "6500",
+          "image": "../assets/menu-images/cheese-rizo.jpeg",
+          "description": "",
+          "ingredients": [
+            "تمن",
+            "دجاج مقرمش",
+            "صوص",
+            "جبن"
+          ]
+        },
+        {
+          "id": "cheese-bbq-rizo",
+          "name": "ريزو جبن وباربكيو",
+          "price": "7000",
+          "image": "../assets/menu-images/cheese-bbq-rizo.jpeg",
+          "description": "",
+          "ingredients": [
+            "تمن",
+            "دجاج مقرمش",
+            "صوص",
+            "جبن",
+            "باربكيو"
+          ]
+        },
+        {
+          "id": "meat-shawarma-rizo",
+          "name": "ريزو شاورما لحم",
+          "price": "7000",
+          "image": "../assets/menu-images/meat-shawarma-rizo.jpeg",
+          "description": "",
+          "ingredients": [
+            "تمن",
+            "شاورما لحم",
+            "صوص"
+          ]
+        },
+        {
+          "id": "chicken-shawarma-rizo",
+          "name": "ريزو شاورما دجاج",
+          "price": "6000",
+          "image": "../assets/menu-images/chicken-shawarma-rizo.jpeg",
+          "description": "",
+          "ingredients": [
+            "تمن",
+            "شاورما دجاج",
+            "صوص"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "falafel",
+      "name": "الـفـلافـل",
+      "icon": "🧆",
+      "items": [
+        {
+          "id": "mixed-falafel",
+          "name": "فلافل مشكل",
+          "price": "1000",
+          "image": "../assets/menu-images/mixed-falafel.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "falafel-pieces",
+          "name": "فلافل حَب",
+          "price": "1000",
+          "image": "../assets/menu-images/falafel-pieces.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "saj-falafel",
+          "name": "صاج فلافل",
+          "price": "2000",
+          "image": "../assets/menu-images/saj-falafel.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "falafel-plate",
+          "name": "طبق فلافل",
+          "price": "3000",
+          "image": "../assets/menu-images/falafel-plate.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "lebanese-falafel",
+          "name": "فلافل لبناني",
+          "price": "1000",
+          "image": "../assets/menu-images/lebanese-falafel.jpeg",
+          "description": "",
+          "ingredients": []
+        }
+      ]
+    },
+    {
+      "id": "weekly-meals",
+      "name": "الوجبات الاسبوعية",
+      "icon": "📅",
+      "items": []
+    },
+    {
+      "id": "appetizers",
+      "name": "المقبلات",
+      "icon": "🥗",
+      "items": [
+        {
+          "id": "small-appetizer-plate",
+          "name": "طبق صغير",
+          "price": "2500",
+          "image": "../assets/menu-images/small-appetizer-plate.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "medium-appetizer-plate",
+          "name": "طبق وسط",
+          "price": "3500",
+          "image": "../assets/menu-images/medium-appetizer-plate.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "large-appetizer-plate",
+          "name": "طبق كبير",
+          "price": "5000",
+          "image": "../assets/menu-images/large-appetizer-plate.jpeg",
+          "description": "",
+          "ingredients": []
+        }
+      ]
+    }
+  ]
+}

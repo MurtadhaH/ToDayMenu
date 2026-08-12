@@ -1,0 +1,43 @@
+html {
+    direction: rtl;
+}
+
+
+header strong#headerPhone {
+    direction: ltr;
+}
+
+.drop-shape {
+    border-radius: 50% 5% 50% 50%;
+    margin-right: 50px;
+}
+
+.brand img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.hero__button {
+    padding: 16px 22px 16px 18px;
+}
+
+/* Phone */
+@media (max-width: 620px) {
+    .drop-shape {
+        margin-right: 20px;
+    }
+
+    .brand img {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+}
+
+/* Small Phone */
+@media (max-width: 400px) {
+
+    .header-actions:hover {
+        right: auto;
+        left: 5px;
+    }
+}

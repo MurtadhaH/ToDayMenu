@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#e7f6eb"/><stop offset="1" stop-color="#d7edee"/></linearGradient>
+<linearGradient id="drink" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9f5a6"/><stop offset="1" stop-color="#86c947"/></linearGradient></defs>
+<rect width="800" height="520" rx="50" fill="url(#bg)"/>
+<ellipse cx="400" cy="436" rx="145" ry="25" fill="#17351f" opacity=".12"/>
+<path d="M294 130h212l-30 290H324z" fill="#e9f6f4" stroke="#95afac" stroke-width="10"/>
+<path d="M315 235h170l-20 173H335z" fill="url(#drink)" opacity=".9"/>
+<g fill="#fff" opacity=".72"><rect x="348" y="262" width="45" height="45" rx="8" transform="rotate(17 348 262)"/><rect x="413" y="292" width="42" height="42" rx="8" transform="rotate(-14 413 292)"/></g>
+<g fill="#198e45"><ellipse cx="348" cy="216" rx="39" ry="15" transform="rotate(-25 348 216)"/><ellipse cx="420" cy="206" rx="38" ry="14" transform="rotate(20 420 206)"/></g>
+<path d="M459 89h18l-25 215h-18z" fill="#1d1d1d"/>
+</svg>

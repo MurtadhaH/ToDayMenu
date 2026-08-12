@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f2d1a">
+  <meta name="description" content="قائمة الطعام الرقمية لكافتيريا توداي">
+  <title>كافتيريا توداي | القائمة</title>
+  <link rel="icon" href="../assets/images/logo.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="arStyle.css">
+</head>
+
+<body>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__glow"></div>
+    <div class="intro__ring intro__ring--one"></div>
+    <div class="intro__ring intro__ring--two"></div>
+    <img class="intro__logo" src="../assets/images/logo.png" alt="">
+    <div class="intro__line"></div>
+    <p class="intro__text">مرحبا بكم ...</p>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="الصفحة الرئيسية لكافتيريا توداي">
+      <img src="../assets/images/logo.png" alt="شعار كافتيريا توداي">
+      <span>
+        <strong id="headerName">كافتيريا توداي</strong>
+        <small>قائمة الطعام الرقمية</small>
+      </span>
+    </a>
+
+    <div class="header-actions">
+      <a class="header-action header-action--lang" id="langButton" href="../index.html">
+        <span class="header-action__icon"><img src="../assets/icons/UKFlag.svg" alt="English Flag"></span>
+        <span>
+          <small>اللغة</small>
+          <strong>English</strong>
+        </span>
+      </a>
+      <a class="header-action" id="phoneButton" href="#">
+        <span class="header-action__icon">☎</span>
+        <span>
+          <small>اتصل بنا</small>
+          <strong id="headerPhone">0770 000 0000</strong>
+        </span>
+      </a>
+      <a class="header-action header-action--primary" id="whatsappButton" href="#" target="_blank" rel="noopener">
+        <span class="header-action__icon"><img src="../assets/icons/whatsApp.svg" alt="WhatsApp Logo"></span>
+        <span>
+          <small>اطلب عبر</small>
+          <strong>واتساب</strong>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__background hero__background--one"></div>
+      <div class="hero__background hero__background--two"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <div class="hero__logo drop-shape">
+          <img src="../assets/images/logo.png" alt="كافتيريا توداي">
+        </div>
+        <!-- <p class="hero__eyebrow">كافتيريا توداي</p> -->
+        <h1>طعام طازج،<br><span>صُنع لليوم.</span></h1>
+        <p class="hero__tagline" id="heroTagline">طعام طازج. مزاج رائع. اليوم.</p>
+        <a class="hero__button" href="#menu">استكشف القائمة <span>↓</span></a>
+      </div>
+
+      <div class="hero__dots" aria-hidden="true">
+        <span class="is-active"></span>
+        <span></span>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="section-heading__eyebrow">قائمتنا</p>
+          <h2>اختر الفئة</h2>
+        </div>
+        <p>اضغط على الفئة، ثم اختر أي وجبة لرؤية المكونات الكاملة.</p>
+      </div>
+
+      <nav class="categories" id="categories" aria-label="فئات القائمة"></nav>
+
+      <div class="category-header">
+        <div>
+          <span class="category-header__icon" id="categoryIcon">🍔</span>
+          <div>
+            <p>الفئة المحددة</p>
+            <h3 id="categoryTitle">برجر</h3>
+          </div>
+        </div>
+        <span class="category-header__count" id="itemCount">٠ وجبات</span>
+      </div>
+
+      <div class="menu-grid" id="menuItems" aria-live="polite"></div>
+    </section>
+
+    <section class="visit-card">
+      <div class="visit-card__content">
+        <p>قم بزيارتنا اليوم</p>
+        <h2>طعام لذيذ بانتظارك.</h2>
+        <span id="restaurantAddress">أضف عنوان المطعم هنا</span>
+      </div>
+      <a id="visitPhoneButton" href="#">اتصل بالمطعم</a>
+    </section>
+  </main>
+
+  <footer>
+    <img src="../assets/images/logo.png" alt="كافتيريا توداي">
+    <p>© <span id="currentYear"></span> كافتيريا توداي. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <div class="modal" id="itemModal" aria-hidden="true">
+    <button class="modal__backdrop" id="modalBackdrop" aria-label="إغلاق التفاصيل"></button>
+    <article class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="modalClose" aria-label="إغلاق التفاصيل">×</button>
+      <img class="modal__image" id="modalImage" src="" alt="">
+      <div class="modal__content">
+        <div class="modal__title-row">
+          <div>
+            <p id="modalCategory">الفئة</p>
+            <h2 id="modalTitle">اسم الوجبة</h2>
+          </div>
+          <strong id="modalPrice">٠ د.ع</strong>
+        </div>
+        <p class="modal__description" id="modalDescription"></p>
+        <h3>مكونات الطعام</h3>
+        <ul class="ingredients" id="modalIngredients"></ul>
+        <a class="modal__order" id="modalOrder" href="#" target="_blank" rel="noopener">اطلب عبر واتساب</a>
+      </div>
+    </article>
+  </div>
+
+  <noscript>
+    <p class="noscript">هذه القائمة تحتاج إلى تفعيل الجافا سكريبت.</p>
+  </noscript>
+
+  <script src="data/menu-fallback.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>

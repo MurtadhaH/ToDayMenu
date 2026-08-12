@@ -1,0 +1,221 @@
+window.MENU_FALLBACK = {
+  "restaurant": {
+    "name": "Today Cafeteria",
+    "tagline": "Fresh food. Good mood. Today.",
+    "phoneDisplay": "0770 000 0000",
+    "phoneLink": "+9647700000000",
+    "whatsappLink": "9647700000000",
+    "address": "Add your restaurant address here",
+    "currency": "IQD"
+  },
+  "categories": [
+    {
+      "id": "burgers",
+      "name": "Burgers",
+      "icon": "🍔",
+      "items": [
+        {
+          "id": "classic-burger",
+          "name": "Classic Burger",
+          "price": "8,500",
+          "image": "assets/menu-images/classic-burger.svg",
+          "description": "Juicy grilled beef burger with a soft toasted bun.",
+          "ingredients": [
+            "Beef patty",
+            "Cheddar cheese",
+            "Lettuce",
+            "Tomato",
+            "Onion",
+            "Today sauce"
+          ]
+        },
+        {
+          "id": "crispy-chicken",
+          "name": "Crispy Chicken Burger",
+          "price": "7,500",
+          "image": "assets/menu-images/crispy-chicken.svg",
+          "description": "Crispy chicken with fresh lettuce and creamy sauce.",
+          "ingredients": [
+            "Crispy chicken",
+            "Lettuce",
+            "Cheese",
+            "Pickles",
+            "Mayonnaise"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "icon": "🍕",
+      "items": [
+        {
+          "id": "margherita-pizza",
+          "name": "Margherita Pizza",
+          "price": "10,000",
+          "image": "assets/menu-images/margherita-pizza.svg",
+          "description": "Classic pizza with tomato, mozzarella, and basil.",
+          "ingredients": [
+            "Pizza dough",
+            "Tomato sauce",
+            "Mozzarella",
+            "Fresh basil",
+            "Olive oil"
+          ]
+        },
+        {
+          "id": "pepperoni-pizza",
+          "name": "Pepperoni Pizza",
+          "price": "12,000",
+          "image": "assets/menu-images/pepperoni-pizza.svg",
+          "description": "Rich mozzarella pizza topped with pepperoni.",
+          "ingredients": [
+            "Pizza dough",
+            "Tomato sauce",
+            "Mozzarella",
+            "Pepperoni",
+            "Oregano"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sandwiches",
+      "name": "Sandwiches",
+      "icon": "🥪",
+      "items": [
+        {
+          "id": "club-sandwich",
+          "name": "Club Sandwich",
+          "price": "7,000",
+          "image": "assets/menu-images/club-sandwich.svg",
+          "description": "A toasted triple-layer sandwich with a fresh filling.",
+          "ingredients": [
+            "Toast",
+            "Chicken",
+            "Cheese",
+            "Lettuce",
+            "Tomato",
+            "Mayonnaise"
+          ]
+        },
+        {
+          "id": "shawarma",
+          "name": "Chicken Shawarma",
+          "price": "5,000",
+          "image": "assets/menu-images/shawarma.svg",
+          "description": "Seasoned chicken shawarma wrapped and served hot.",
+          "ingredients": [
+            "Chicken",
+            "Flatbread",
+            "Garlic sauce",
+            "Pickles",
+            "Fries"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "name": "Main Dishes",
+      "icon": "🍝",
+      "items": [
+        {
+          "id": "pasta",
+          "name": "Tomato Pasta",
+          "price": "9,000",
+          "image": "assets/menu-images/pasta.svg",
+          "description": "Pasta tossed with tomato sauce and fresh herbs.",
+          "ingredients": [
+            "Pasta",
+            "Tomato sauce",
+            "Garlic",
+            "Herbs",
+            "Parmesan"
+          ]
+        },
+        {
+          "id": "fries",
+          "name": "Crispy Fries",
+          "price": "3,000",
+          "image": "assets/menu-images/fries.svg",
+          "description": "Golden crispy fries served with Today sauce.",
+          "ingredients": [
+            "Potatoes",
+            "Salt",
+            "Seasoning",
+            "Today sauce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "icon": "🥤",
+      "items": [
+        {
+          "id": "mojito",
+          "name": "Lemon Mint",
+          "price": "4,000",
+          "image": "assets/menu-images/mojito.svg",
+          "description": "Refreshing lemon drink with fresh mint and ice.",
+          "ingredients": [
+            "Lemon",
+            "Mint",
+            "Sugar syrup",
+            "Soda",
+            "Ice"
+          ]
+        },
+        {
+          "id": "cola",
+          "name": "Soft Drink",
+          "price": "1,500",
+          "image": "assets/menu-images/cola.svg",
+          "description": "Cold soft drink served with ice.",
+          "ingredients": [
+            "Soft drink",
+            "Ice"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "icon": "🍰",
+      "items": [
+        {
+          "id": "cheesecake",
+          "name": "Strawberry Cheesecake",
+          "price": "5,000",
+          "image": "assets/menu-images/cheesecake.svg",
+          "description": "Creamy cheesecake with strawberry topping.",
+          "ingredients": [
+            "Cream cheese",
+            "Biscuit base",
+            "Strawberry",
+            "Sugar",
+            "Cream"
+          ]
+        },
+        {
+          "id": "chocolate-cake",
+          "name": "Chocolate Cake",
+          "price": "5,000",
+          "image": "assets/menu-images/chocolate-cake.svg",
+          "description": "Soft chocolate cake with rich chocolate layers.",
+          "ingredients": [
+            "Chocolate",
+            "Flour",
+            "Eggs",
+            "Butter",
+            "Cream"
+          ]
+        }
+      ]
+    }
+  ]
+};
