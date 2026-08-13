@@ -1,7 +1,7 @@
 {
   "restaurant": {
-    "name": "كافتيريا توداي",
-    "tagline": "طعام طازج. مزاج رائع. اليوم.",
+    "name": "كافتيريا تودي",
+    "tagline": "طعام طازج، مزاج رائع.",
     "phoneDisplay": "0771 431 6036",
     "phoneLink": "+9647714316036",
     "whatsappLink": "9647714316036",
@@ -26,7 +26,7 @@
             "بطاطا",
             "بيض",
             "طرشي",
-            "فنگر",
+            "فنكر",
             "سلطة",
             "صمون"
           ]
@@ -42,7 +42,7 @@
             "بصل",
             "بيض",
             "طرشي",
-            "فنگر",
+            "فنكر",
             "سلطة",
             "صمون"
           ]
@@ -58,7 +58,7 @@
             "طماطة",
             "بيض",
             "طرشي",
-            "فنگر",
+            "فنكر",
             "سلطة",
             "صمون"
           ]
@@ -73,14 +73,14 @@
             "لحم",
             "بيض",
             "طرشي",
-            "فنگر",
+            "فنكر",
             "سلطة",
             "صمون"
           ]
         },
         {
           "id": "eggs-iraqi-burger",
-          "name": "بيض وبرگر عراقي",
+          "name": "بيض وبركر عراقي",
           "price": "5000",
           "image": "../assets/menu-images/eggs-iraqi-burger.jpeg",
           "description": "",
@@ -94,8 +94,22 @@
           ]
         },
         {
+          "id": "eggs-plate",
+          "name": "طبق بيض",
+          "price": "2000",
+          "image": "../assets/menu-images/eggs-plate.jpeg",
+          "description": "",
+          "ingredients": [
+            "بيض",
+            "طرشي",
+            "فنكر",
+            "سلطة",
+            "صمون"
+          ]
+        },
+        {
           "id": "arooq-plate",
-          "name": "طبق عروگ",
+          "name": "طبق عروك",
           "price": "4000",
           "image": "../assets/menu-images/arooq-plate.jpeg",
           "description": "",
@@ -111,7 +125,7 @@
         },
         {
           "id": "arooq-eggs",
-          "name": "عروگ وبيض",
+          "name": "عروك وبيض",
           "price": "4000",
           "image": "../assets/menu-images/arooq-eggs.jpeg",
           "description": "",
@@ -119,14 +133,14 @@
             "لحم",
             "بيض",
             "طرشي",
-            "فنگر",
+            "فنكر",
             "سلطة",
             "صمون"
           ]
         },
         {
           "id": "arooq-wrap",
-          "name": "لفة عروگ",
+          "name": "لفة عروك",
           "price": "2000",
           "image": "../assets/menu-images/arooq-wrap.jpeg",
           "description": "",
@@ -203,7 +217,7 @@
             "لحم",
             "طرشي",
             "طماطة",
-            "فنگر",
+            "فنكر",
             "صوص",
             "صمون"
           ]
@@ -218,7 +232,7 @@
             "دجاج",
             "طرشي",
             "طماطة",
-            "فنگر",
+            "فنكر",
             "صوص",
             "صمون"
           ]
@@ -231,7 +245,7 @@
           "description": "",
           "ingredients": [
             "دجاج مقرمش",
-            "فنگر",
+            "فنكر",
             "خس",
             "صوص",
             "جبن",
@@ -246,7 +260,7 @@
           "description": "",
           "ingredients": [
             "دجاج",
-            "فنگر",
+            "فنكر",
             "خس",
             "صوص",
             "جبن",
@@ -261,7 +275,7 @@
           "description": "",
           "ingredients": [
             "صدر دجاج",
-            "فنگر",
+            "فنكر",
             "خس",
             "صوص",
             "صمون"
@@ -302,7 +316,7 @@
         },
         {
           "id": "iraqi-meat-burger",
-          "name": "برگر لحم عراقي",
+          "name": "بركر لحم عراقي",
           "price": "4000",
           "image": "../assets/menu-images/iraqi-meat-burger.jpeg",
           "description": "إضافة الجبن + 500",
@@ -310,13 +324,13 @@
             "لحم",
             "خس",
             "طماطة",
-            "فنگر",
+            "فنكر",
             "صوص"
           ]
         },
         {
           "id": "iraqi-chicken-burger",
-          "name": "برگر دجاج عراقي",
+          "name": "بركر دجاج عراقي",
           "price": "3000",
           "image": "../assets/menu-images/iraqi-chicken-burger.jpeg",
           "description": "إضافة الجبن + 500",
@@ -324,7 +338,7 @@
             "دجاج",
             "خس",
             "طماطة",
-            "فنگر",
+            "فنكر",
             "صوص"
           ]
         },
@@ -337,7 +351,7 @@
           "ingredients": [
             "دجاج مقرمش",
             "خس",
-            "فنگر",
+            "فنكر",
             "صوص",
             "جبن"
           ]
@@ -351,7 +365,7 @@
           "ingredients": [
             "دجاج",
             "خس",
-            "فنگر",
+            "فنكر",
             "صوص",
             "جبن"
           ]
@@ -365,7 +379,7 @@
           "ingredients": [
             "صدر دجاج",
             "خس",
-            "فنگر",
+            "فنكر",
             "صوص",
             "جبن"
           ]
@@ -403,7 +417,7 @@
           "ingredients": [
             "دجاج سبايسي",
             "خس",
-            "فنگر",
+            "فنكر",
             "صوص",
             "جبن"
           ]
@@ -477,7 +491,7 @@
         },
         {
           "id": "saj-iraqi-meat-burger",
-          "name": "صاج برگر لحم عراقي",
+          "name": "صاج بركر لحم عراقي",
           "price": "4500",
           "image": "../assets/menu-images/saj-iraqi-meat-burger.jpeg",
           "description": "",
@@ -490,7 +504,7 @@
         },
         {
           "id": "saj-chicken-burger",
-          "name": "صاج برگر دجاج",
+          "name": "صاج بركر دجاج",
           "price": "3500",
           "image": "../assets/menu-images/saj-chicken-burger.jpeg",
           "description": "",
@@ -602,12 +616,12 @@
     },
     {
       "id": "finger",
-      "name": "الفنگر",
+      "name": "الفنكر",
       "icon": "🍟",
       "items": [
         {
           "id": "small-finger-cup",
-          "name": "فنگر قدح صغير",
+          "name": "فنكر قدح صغير",
           "price": "1250",
           "image": "../assets/menu-images/small-finger-cup.jpeg",
           "description": "",
@@ -615,7 +629,7 @@
         },
         {
           "id": "medium-finger-plate",
-          "name": "فنگر طبق وسط",
+          "name": "فنكر طبق وسط",
           "price": "2000",
           "image": "../assets/menu-images/medium-finger-plate.jpeg",
           "description": "",
@@ -623,7 +637,7 @@
         },
         {
           "id": "large-finger-plate",
-          "name": "فنگر طبق كبير",
+          "name": "فنكر طبق كبير",
           "price": "3000",
           "image": "../assets/menu-images/large-finger-plate.jpeg",
           "description": "",
@@ -631,7 +645,7 @@
         },
         {
           "id": "small-cheese-finger",
-          "name": "فنگر بالجبن صغير",
+          "name": "فنكر بالجبن صغير",
           "price": "2000",
           "image": "../assets/menu-images/small-cheese-finger.jpeg",
           "description": "",
@@ -639,7 +653,7 @@
         },
         {
           "id": "large-cheese-finger",
-          "name": "فنگر بالجبن كبير",
+          "name": "فنكر بالجبن كبير",
           "price": "4000",
           "image": "../assets/menu-images/large-cheese-finger.jpeg",
           "description": "",
@@ -647,7 +661,7 @@
         },
         {
           "id": "meat-shawarma-finger",
-          "name": "فنگر بشاورما لحم",
+          "name": "فنكر بشاورما لحم",
           "price": "6000",
           "image": "../assets/menu-images/meat-shawarma-finger.jpeg",
           "description": "",
@@ -655,7 +669,7 @@
         },
         {
           "id": "chicken-shawarma-finger",
-          "name": "فنگر بشاورما دجاج",
+          "name": "فنكر بشاورما دجاج",
           "price": "5000",
           "image": "../assets/menu-images/chicken-shawarma-finger.jpeg",
           "description": "",
@@ -663,7 +677,7 @@
         },
         {
           "id": "iraqi-meat-finger",
-          "name": "فنگر باللحم العراقي",
+          "name": "فنكر باللحم العراقي",
           "price": "5000",
           "image": "../assets/menu-images/iraqi-meat-finger.jpeg",
           "description": "",
@@ -671,7 +685,7 @@
         },
         {
           "id": "today-finger",
-          "name": "فنگر تودي",
+          "name": "فنكر تودي",
           "price": "5000",
           "image": "../assets/menu-images/today-finger.jpeg",
           "description": "",
@@ -679,7 +693,7 @@
         },
         {
           "id": "cheese-bbq-finger",
-          "name": "فنگر جبن وباربكيو",
+          "name": "فنكر جبن وباربكيو",
           "price": "2500",
           "image": "../assets/menu-images/cheese-bbq-finger.jpeg",
           "description": "",
@@ -687,7 +701,7 @@
         },
         {
           "id": "crispy-finger",
-          "name": "فنگر مقرمش",
+          "name": "فنكر مقرمش",
           "price": "2500",
           "image": "../assets/menu-images/crispy-finger.jpeg",
           "description": "",

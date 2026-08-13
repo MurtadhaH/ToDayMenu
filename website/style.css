@@ -572,6 +572,7 @@ header strong#headerPhone::before {
   padding: 4px 4px 8px;
   overflow-x: auto;
   scrollbar-width: none;
+  flex-wrap: wrap;
 }
 
 .categories::-webkit-scrollbar {
@@ -586,7 +587,7 @@ header strong#headerPhone::before {
   min-height: 52px;
   padding: 10px 18px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  /* border-radius: 999px; */
   color: #354139;
   background: rgba(255, 255, 255, .66);
   cursor: pointer;
@@ -1287,6 +1288,16 @@ footer p {
 }
 
 @font-face {
+  font-family: 'myGE_SS';
+  src: url("assets/fonts/GE_SS/GE_SS_Two_Bold.otf");
+}
+
+@font-face {
+  font-family: 'myDisplay';
+  src: url("assets/fonts/ArabicDisplay/ArabicUIDisplayBold.otf");
+}
+
+@font-face {
   font-family: 'myMarhey';
   src: url("assets/fonts/marhey/Marhey-Regular.ttf");
 }
@@ -1297,7 +1308,7 @@ footer p {
 }
 
 * {
-  font-family: 'myMarhey';
+  font-family: 'myDisplay';
 }
 
 h1,
@@ -1306,5 +1317,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'myKufi' !important;
+  font-family: 'myGE_SS' !important;
 }
