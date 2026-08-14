@@ -73,6 +73,9 @@ header .header-action--primary img {
   background:
     radial-gradient(circle at 50% 44%, rgba(29, 151, 68, 0.22), transparent 28%),
     linear-gradient(145deg, #05190e, #0e321d 68%, #071c10);
+  background:
+    radial-gradient(circle at 50% 44%, rgb(210 210 210 / 22%), #c4c4c400 28%),
+    linear-gradient(145deg, #292929, #4c4c4c 68%, #071c10);
   animation: introExit 0.9s cubic-bezier(.76, 0, .24, 1) 3.55s forwards;
 }
 
@@ -252,11 +255,12 @@ header strong#headerPhone::before {
 }
 
 .brand strong {
-  font-size: 17px;
+  font-size: 20px;
   white-space: nowrap;
 }
 
 .brand small {
+  display: none;
   margin-top: 4px;
   color: rgba(255, 255, 255, .68);
   font-size: 11px;
@@ -302,6 +306,10 @@ header strong#headerPhone::before {
   border-radius: 50%;
   background: rgba(255, 255, 255, .14);
   font-size: 15px;
+}
+
+.header-action--lang {
+  display: none;
 }
 
 .header-action--lang .header-action__icon {
@@ -463,6 +471,15 @@ header strong#headerPhone::before {
   color: rgba(255, 255, 255, .76);
   font-size: clamp(16px, 2vw, 20px);
   line-height: 1.7;
+}
+
+i.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 11px solid var(--white);
+  margin-top: 2px;
 }
 
 .hero__button {
@@ -691,6 +708,127 @@ header strong#headerPhone::before {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Breathing animation to make the card look alive */
+@keyframes goldPulse {
+  0% {
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 16px 50px rgba(212, 175, 55, 0.4);
+  }
+
+  100% {
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.2);
+  }
+}
+
+/* Rotating golden laser border */
+@keyframes goldenRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Shimmer shine effect that moves across the card */
+@keyframes goldenShimmer {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+  }
+
+  100% {
+    transform: translateX(150%) skewX(-25deg);
+  }
+}
+
+/* correct the image to show prime borders */
+
+.menu-card.special-menu-card .menu-card__image-wrap {
+  width: 98%;
+  top: 1%;
+  right: 1%;
+  border-radius: calc(var(--radius-lg) - 5px);
+}
+
+/* The Special Card Base */
+.menu-card.special-menu-card {
+  /* Rich, luxury cream/white gradient background */
+  background: linear-gradient(135deg, #ffffff, #fbf8f0);
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+  /* Hide default border to let the gold shine */
+
+  /* Apply the alive breathing effect */
+  animation: cardIn .5s both, goldPulse 3s ease-in-out infinite;
+}
+
+/* The Living Moving Gold Border */
+.menu-card.special-menu-card::before {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 220%;
+  height: 220%;
+  /* Luxury metallic gold spectrum colors */
+  background: conic-gradient(transparent 0deg,
+      #d4af37 40deg,
+      /* Metallic Gold */
+      #f3e5ab 80deg,
+      /* Cream Gold */
+      #aa771c 120deg,
+      /* Dark Rich Gold */
+      transparent 160deg,
+      transparent 360deg);
+  animation: goldenRotate 3s linear infinite;
+  z-index: -2;
+}
+
+/* Inner masking to keep text clean and background safe */
+.menu-card.special-menu-card::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  /* 3px thick premium border */
+  background: inherit;
+  border-radius: calc(var(--radius-lg) - 3px);
+  z-index: -1;
+}
+
+/* The Shimmer Reflection (Adds premium "alive" lighting) */
+.menu-card.special-menu-card .prime-shimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 235, 160, 0.4),
+      transparent);
+  transform: translateX(-150%) skewX(-25deg);
+  animation: goldenShimmer 4.5s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+  /* Stops it interfering with clicks */
+}
+
+/* Interactive Hover State */
+.menu-card.special-menu-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 60px rgba(170, 119, 28, 0.35);
+  /* Speed up the border rotation on hover for excitement */
+}
+
+.menu-card.special-menu-card:hover::before {
+  animation-duration: 1.5s;
 }
 
 .menu-card__image-wrap {
@@ -1252,7 +1390,7 @@ footer p {
   }
 
   .header-actions:hover::before {
-    display: none;
+    /* display: none; */
   }
 
   .header-actions:hover {

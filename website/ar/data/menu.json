@@ -5,7 +5,7 @@
     "phoneDisplay": "0771 431 6036",
     "phoneLink": "+9647714316036",
     "whatsappLink": "9647714316036",
-    "address": "داخل جامعة بغداد، قرب بناية رئاسة الجامعة.",
+    "address": "📍داخل جامعة بغداد، قرب بناية رئاسة الجامعة.",
     "currency": "د.ع"
   },
   "categories": [
@@ -14,6 +14,24 @@
       "name": "الفطور",
       "icon": "🍳",
       "items": [
+        {
+          "id": "special-breakfast-today",
+          "special": true,
+          "name": "سيت فطور تودي",
+          "price": "15000",
+          "image": "../assets/menu-images/makhlama-iraqi-meat.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم عراقي",
+            "طماطة",
+            "بطاطا",
+            "بيض",
+            "طرشي",
+            "فنكر",
+            "سلطة",
+            "صمون"
+          ]
+        },
         {
           "id": "makhlama-iraqi-meat",
           "name": "مخلمة لحم عراقي",
@@ -285,7 +303,7 @@
     },
     {
       "id": "snacks",
-      "name": "الـسـنـاك",
+      "name": "السندويج",
       "icon": "🍔",
       "items": [
         {
@@ -645,18 +663,10 @@
         },
         {
           "id": "small-cheese-finger",
-          "name": "فنكر بالجبن صغير",
-          "price": "2000",
+          "name": "فنكر بالجبن",
+          "price": "2000 - 4000",
           "image": "../assets/menu-images/small-cheese-finger.jpeg",
-          "description": "",
-          "ingredients": []
-        },
-        {
-          "id": "large-cheese-finger",
-          "name": "فنكر بالجبن كبير",
-          "price": "4000",
-          "image": "../assets/menu-images/large-cheese-finger.jpeg",
-          "description": "",
+          "description": "طبق صغير (2000)، طبق كبير (4000)",
           "ingredients": []
         },
         {

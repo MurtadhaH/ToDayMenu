@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f2d1a">
+  <meta name="description" content="Today Cafeteria digital menu">
+  <title>Today Cafeteria | Menu</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__glow"></div>
+    <div class="intro__ring intro__ring--one"></div>
+    <div class="intro__ring intro__ring--two"></div>
+    <img class="intro__logo" src="assets/images/logo.png" alt="">
+    <div class="intro__line"></div>
+    <p class="intro__text">WELCOME TO TODAY</p>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="Today Cafeteria home">
+      <img src="assets/images/logo.png" alt="Today Cafeteria logo">
+      <span>
+        <strong id="headerName">Today Cafeteria</strong>
+        <small>Digital Menu</small>
+      </span>
+    </a>
+
+    <div class="header-actions">
+      <a class="header-action header-action--lang" id="langButton" href="ar/index.html">
+        <span class="header-action__icon"><img src="assets/icons/IQFlag.svg" height="100%" alt="Arabic Flag"></span>
+        <span>
+          <small>Language</small>
+          <strong>العربية</strong>
+        </span>
+      </a>
+      <a class="header-action" id="phoneButton" href="#">
+        <span class="header-action__icon">☎</span>
+        <span>
+          <small>Call us</small>
+          <strong id="headerPhone">0770 000 0000</strong>
+        </span>
+      </a>
+      <a class="header-action header-action--primary" id="whatsappButton" href="#" target="_blank" rel="noopener">
+        <span class="header-action__icon"><img src="assets/icons/whatsApp.svg" alt="WhatsApp Logo"></span>
+        <span>
+          <small>Order through</small>
+          <strong>WhatsApp</strong>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__background hero__background--one"></div>
+      <div class="hero__background hero__background--two"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <div class="hero__logo drop-shape">
+          <img class="hero__logo" src="assets/images/logo.png" alt="Today Cafeteria">
+        </div>
+        <!-- <p class="hero__eyebrow">TODAY CAFETERIA</p> -->
+        <h1>Fresh food,<br><span>made for today.</span></h1>
+        <p class="hero__tagline" id="heroTagline">Fresh food. Good mood. Today.</p>
+        <a class="hero__button" href="#menu">Explore the menu <span><i class="arrow-down"></i></span></a>
+      </div>
+
+      <div class="hero__dots" aria-hidden="true">
+        <span class="is-active"></span>
+        <span></span>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="section-heading__eyebrow">OUR MENU</p>
+          <h2>Choose your category</h2>
+        </div>
+        <p>Tap a category, then select any item to see its full ingredients.</p>
+      </div>
+
+      <nav class="categories" id="categories" aria-label="Menu categories"></nav>
+
+      <div class="category-header">
+        <div>
+          <span class="category-header__icon" id="categoryIcon">🍔</span>
+          <div>
+            <p>Selected category</p>
+            <h3 id="categoryTitle">Burgers</h3>
+          </div>
+        </div>
+        <span class="category-header__count" id="itemCount">0 items</span>
+      </div>
+
+      <div class="menu-grid" id="menuItems" aria-live="polite"></div>
+    </section>
+
+    <section class="visit-card">
+      <div class="visit-card__content">
+        <p>VISIT TODAY</p>
+        <h2>Good food is waiting for you.</h2>
+        <span id="restaurantAddress">Add your restaurant address here</span>
+      </div>
+      <a id="visitPhoneButton" href="#">Call the restaurant</a>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/images/logo.png" alt="Today Cafeteria">
+    <p>© <span id="currentYear"></span> Today Cafeteria. All rights reserved.</p>
+  </footer>
+
+  <div class="modal" id="itemModal" aria-hidden="true">
+    <button class="modal__backdrop" id="modalBackdrop" aria-label="Close details"></button>
+    <article class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="modalClose" aria-label="Close details">×</button>
+      <img class="modal__image" id="modalImage" src="" alt="">
+      <div class="modal__content">
+        <div class="modal__title-row">
+          <div>
+            <p id="modalCategory">CATEGORY</p>
+            <h2 id="modalTitle">Item name</h2>
+          </div>
+          <strong id="modalPrice">0 IQD</strong>
+        </div>
+        <p class="modal__description" id="modalDescription"></p>
+        <h3>Food components</h3>
+        <ul class="ingredients" id="modalIngredients"></ul>
+        <a class="modal__order" id="modalOrder" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </article>
+  </div>
+
+  <noscript>
+    <p class="noscript">This menu needs JavaScript enabled.</p>
+  </noscript>
+
+  <!-- <script src="data/menu-fallback.js"></script> -->
+  <script src="script.js"></script>
+</body>
+
+</html>

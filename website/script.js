@@ -130,18 +130,19 @@ function renderCategory(categoryId) {
 
 function createMenuCard(item, category, index) {
   const card = document.createElement("article");
-  card.className = "menu-card";
+  card.className = `menu-card ${item.special ? "special-menu-card" : ""}`;
   card.tabIndex = 0;
   card.style.animationDelay = `${Math.min(index * 75, 300)}ms`;
   card.setAttribute("aria-label", isAr ? `عرض التفاصيل لـ ${item.name}` : `View details for ${item.name}`);
 
   const componentsText = isAr
-    ? `${item.ingredients.length} ${item.ingredients.length === 1 ? "مكون" : "مكونات"}`
+    ? `${item.ingredients.length} ${(item.ingredients.length < 2 || item.ingredients.length > 10) ? "مكون" : "مكونات"}`
     : `${item.ingredients.length} ${item.ingredients.length === 1 ? "component" : "components"}`;
 
   const viewDetailsText = isAr ? "عرض التفاصيل" : "View details";
 
   card.innerHTML = `
+    ${item.special ? '<div class="prime-shimmer"></div>' : ''}
     <div class="menu-card__image-wrap">
       <img  class="menu-card__image" 
         onerror="this.onerror=null; this.src='${isAr ? "../" : ""}assets/menu-images/no-image.jpeg'"
