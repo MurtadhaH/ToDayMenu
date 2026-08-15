@@ -619,14 +619,21 @@ i.arrow-down {
 }
 
 .categories {
-  display: flex;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+
   gap: 10px;
   margin: 0 -4px 38px;
   padding: 4px 4px 8px;
+
   overflow-x: auto;
+  overflow-y: hidden;
+
   scrollbar-width: none;
-  flex-wrap: wrap;
 }
+
 
 .categories::-webkit-scrollbar {
   display: none;
