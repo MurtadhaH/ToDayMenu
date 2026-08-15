@@ -12,7 +12,7 @@
     {
       "id": "breakfast",
       "name": "الفطور",
-      "icon": "🍳",
+      "icon": "../assets/menu-images/breakfast.jpeg",
       "items": [
         {
           "id": "special-breakfast-today",
@@ -223,7 +223,7 @@
     {
       "id": "western-dishes",
       "name": "الاطباق الغربية",
-      "icon": "🍽️",
+      "icon": "../assets/menu-images/western-dishes.jpeg",
       "items": [
         {
           "id": "meat-shawarma-plate",
@@ -304,7 +304,7 @@
     {
       "id": "snacks",
       "name": "السندويج",
-      "icon": "🍔",
+      "icon": "../assets/menu-images/snacks.jpeg",
       "items": [
         {
           "id": "shawarma-laham",
@@ -459,7 +459,13 @@
           "price": "4500",
           "image": "../assets/menu-images/meat-sandwich.jpeg",
           "description": "",
-          "ingredients": []
+          "ingredients": [
+            "شاورما لحم",
+            "فنكر",
+            "طرشي",
+            "طماطة",
+            "صوص"
+          ]
         },
         {
           "id": "round-chicken-sandwich",
@@ -479,7 +485,7 @@
     {
       "id": "saj",
       "name": "الصاج",
-      "icon": "🌯",
+      "icon": "../assets/menu-images/saj.jpeg",
       "items": [
         {
           "id": "saj-laham",
@@ -515,6 +521,7 @@
           "description": "",
           "ingredients": [
             "لحم",
+            "جبن",
             "طرشي",
             "طماطة",
             "صوص"
@@ -528,6 +535,7 @@
           "description": "",
           "ingredients": [
             "دجاج",
+            "جبن",
             "طرشي",
             "طماطة",
             "صوص"
@@ -541,6 +549,7 @@
           "description": "",
           "ingredients": [
             "صدر دجاج",
+            "جبن",
             "خس",
             "صوص"
           ]
@@ -566,6 +575,7 @@
           "description": "",
           "ingredients": [
             "دجاج مقرمش",
+            "جبن",
             "بطاطا",
             "خس",
             "صوص"
@@ -576,7 +586,7 @@
     {
       "id": "pasta",
       "name": "المـعـكرونــة",
-      "icon": "🍝",
+      "icon": "../assets/menu-images/pasta.jpeg",
       "items": [
         {
           "id": "bechamel-chicken-pasta",
@@ -595,7 +605,7 @@
           "id": "large-bechamel-chicken-pasta",
           "name": "معكرونة بشاميل ودجاج كبير",
           "price": "6000",
-          "image": "../assets/menu-images/large-bechamel-chicken-pasta.jpeg",
+          "image": "../assets/menu-images/bechamel-chicken-pasta.jpeg",
           "description": "",
           "ingredients": [
             "معكرونة",
@@ -621,7 +631,7 @@
           "id": "large-meat-pasta",
           "name": "معكرونة لحم كبير",
           "price": "8000",
-          "image": "../assets/menu-images/large-meat-pasta.jpeg",
+          "image": "../assets/menu-images/meat-pasta.jpeg",
           "description": "",
           "ingredients": [
             "معكرونة",
@@ -635,37 +645,21 @@
     {
       "id": "finger",
       "name": "الفنكر",
-      "icon": "🍟",
+      "icon": "../assets/menu-images/finger.jpeg",
       "items": [
         {
           "id": "small-finger-cup",
-          "name": "فنكر قدح صغير",
-          "price": "1250",
-          "image": "../assets/menu-images/small-finger-cup.jpeg",
-          "description": "",
-          "ingredients": []
-        },
-        {
-          "id": "medium-finger-plate",
-          "name": "فنكر طبق وسط",
-          "price": "2000",
-          "image": "../assets/menu-images/medium-finger-plate.jpeg",
-          "description": "",
-          "ingredients": []
-        },
-        {
-          "id": "large-finger-plate",
-          "name": "فنكر طبق كبير",
-          "price": "3000",
-          "image": "../assets/menu-images/large-finger-plate.jpeg",
-          "description": "",
+          "name": "فنكر كلاسك",
+          "price": "1250 - 3000",
+          "image": "../assets/menu-images/clasic-finger.jpeg",
+          "description": "صغير (1250)، وسط (2000)، كبير (3000)",
           "ingredients": []
         },
         {
           "id": "small-cheese-finger",
           "name": "فنكر بالجبن",
           "price": "2000 - 4000",
-          "image": "../assets/menu-images/small-cheese-finger.jpeg",
+          "image": "../assets/menu-images/cheese-finger.jpeg",
           "description": "طبق صغير (2000)، طبق كبير (4000)",
           "ingredients": []
         },
@@ -792,7 +786,7 @@
     {
       "id": "falafel",
       "name": "الـفـلافـل",
-      "icon": "🧆",
+      "icon": "../assets/menu-images/falafel.jpeg",
       "items": [
         {
           "id": "mixed-falafel",
@@ -839,13 +833,13 @@
     {
       "id": "weekly-meals",
       "name": "الوجبات الاسبوعية",
-      "icon": "📅",
+      "icon": "../assets/menu-images/weekly-meals.jpeg",
       "items": []
     },
     {
       "id": "appetizers",
       "name": "المقبلات",
-      "icon": "🥗",
+      "icon": "../assets/menu-images/appetizers.jpeg",
       "items": [
         {
           "id": "small-appetizer-plate",

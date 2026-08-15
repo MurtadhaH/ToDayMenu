@@ -418,6 +418,79 @@ header strong#headerPhone::before {
   }
 }
 
+.hero__dots {
+  position: absolute;
+  right: max(18px, calc((100vw - 1180px) / 2));
+  bottom: 42px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero__dots span {
+  width: 28px;
+  height: 3px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, .35);
+  animation: dotOne 14s linear infinite;
+}
+
+.hero__dots span.is-active {
+  background: rgba(255, 255, 255, .35);
+  animation: dotTwo 14s linear infinite;
+}
+
+@keyframes dotOne {
+
+  0%,
+  43% {
+    background: #66d086;
+  }
+
+  50%,
+  93% {
+    background: rgba(255, 255, 255, .35);
+  }
+
+  100% {
+    background: rgba(255, 255, 255, .35);
+  }
+}
+
+@keyframes dotTwo {
+
+  0%,
+  43% {
+    background: rgba(255, 255, 255, .35);
+  }
+
+  50%,
+  93% {
+    background: #66d086;
+  }
+
+  100% {
+    background: rgba(255, 255, 255, .35);
+  }
+}
+
+/* 
+@keyframes dotSwap {
+
+  0%,
+  48% {
+    transform: translateX(0);
+  }
+
+  51%,
+  96% {
+    transform: translateX(36px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+} */
+
 .hero__content {
   width: min(1180px, calc(100% - 34px));
   margin: 0 auto;
@@ -512,43 +585,6 @@ i.arrow-down {
   background: var(--green);
 }
 
-.hero__dots {
-  position: absolute;
-  right: max(18px, calc((100vw - 1180px) / 2));
-  bottom: 42px;
-  display: flex;
-  gap: 8px;
-}
-
-.hero__dots span {
-  width: 28px;
-  height: 3px;
-  border-radius: 99px;
-  background: rgba(255, 255, 255, .35);
-}
-
-.hero__dots span.is-active {
-  background: #66d086;
-  animation: dotSwap 14s linear infinite;
-}
-
-@keyframes dotSwap {
-
-  0%,
-  48% {
-    transform: translateX(0);
-  }
-
-  51%,
-  96% {
-    transform: translateX(36px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 /* Menu */
 .menu-section {
   width: min(1180px, calc(100% - 34px));
@@ -597,6 +633,9 @@ i.arrow-down {
 }
 
 .category-button {
+  position: relative;
+  max-height: 50px;
+  overflow: hidden;
   flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
@@ -624,6 +663,18 @@ i.arrow-down {
   box-shadow: 0 12px 28px rgba(15, 45, 26, .2);
 }
 
+.category-button img {
+  max-width: 32px;
+  visibility: hidden;
+}
+
+.category-button img:nth-child(2) {
+  position: absolute;
+  visibility: visible;
+  max-width: 50px;
+  right: 0;
+}
+
 .category-button__icon {
   font-size: 19px;
 }
@@ -643,6 +694,7 @@ i.arrow-down {
 
 .category-header__icon {
   display: grid;
+  overflow: hidden;
   place-items: center;
   width: 53px;
   height: 53px;

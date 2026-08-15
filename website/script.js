@@ -88,9 +88,19 @@ function createCategoryButtons(categories) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "category-button";
+    // check if category icon is image not emoji
+    if (category.icon.includes('.')) {
+      button.innerHTML = `
+        <img src="${category.icon}" alt="${category.name}">
+        <img src="${category.icon}" alt="${category.name}">
+      `
+    } else {
+      button.innerHTML = `
+        <span class="category-button__icon" aria-hidden="true">${category.icon}</span>
+      `
+    }
     button.dataset.categoryId = category.id;
-    button.innerHTML = `
-      <span class="category-button__icon" aria-hidden="true">${category.icon}</span>
+    button.innerHTML += `
       <span>${escapeHTML(category.name)}</span>
     `;
 
@@ -117,7 +127,15 @@ function renderCategory(categoryId) {
   });
 
   elements.categoryTitle.textContent = category.name;
-  elements.categoryIcon.textContent = category.icon;
+  if (category.icon.includes('.')) {
+    elements.categoryIcon.innerHTML = `
+      <img src="${category.icon}" alt="${category.name}">
+    `
+  } else {
+    elements.categoryIcon.innerHTML = `
+      <span class="category-button__icon" aria-hidden="true">${category.icon}</span>
+    `
+  }
   elements.itemCount.textContent = isAr
     ? `${category.items.length} ${(category.items.length < 2 || category.items.length > 10) ? "وجبة" : "وجبات"}`
     : `${category.items.length} ${category.items.length < 2 ? "item" : "items"}`;
@@ -142,7 +160,7 @@ function createMenuCard(item, category, index) {
   const viewDetailsText = isAr ? "عرض التفاصيل" : "View details";
 
   card.innerHTML = `
-    ${item.special ? '<div class="prime-shimmer"></div>' : ''}
+  ${item.special ? '<div class="prime-shimmer"></div>' : ''}
     <div class="menu-card__image-wrap">
       <img  class="menu-card__image" 
         onerror="this.onerror=null; this.src='${isAr ? "../" : ""}assets/menu-images/no-image.jpeg'"
