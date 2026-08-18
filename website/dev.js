@@ -1,7 +1,9 @@
 "use strict";
 
 /* =====================================================
+   MURTADHA ALTUFaily
    REUSABLE DEVELOPER SIGNATURE
+
    File: dev.js
 ===================================================== */
 
@@ -12,30 +14,62 @@
     =================================================== */
 
     const developer = {
+
         name: "Murtadha Altufaily",
-        title: "Software Developer",
-        specialty: "Web Engineering",
+
+        title: "Full-Stack Developer",
+
+        specialty: "Automation & Robotics",
+
+        experience: "6+ Years",
 
         phoneDisplay: "+964 786 456 6840",
+
         phoneLink: "+9647864566840",
 
         email: "murtadhaaltufaily@gmail.com",
 
+        highlights: [
+            {
+                value: "6+",
+                label: "Years"
+            },
+            {
+                value: "Full-Stack",
+                label: "Development"
+            },
+            {
+                value: "Python",
+                label: "Automation"
+            },
+            {
+                value: "Robotics",
+                label: "Engineering"
+            }
+        ],
+
         skills: [
+            "JavaScript",
+            "Vue.js",
+            "PHP",
+            "MySQL",
+            "Python",
+            "C# / .NET",
             "HTML5",
             "CSS3",
-            "JavaScript",
-            "Responsive UI",
-            "REST APIs",
-            "JSON",
+            "AJAX",
+            "SQL",
             "Git",
-            "UI / UX"
+            "Linux",
+            "MATLAB",
+            "3D Modeling"
         ]
+
     };
 
 
     /* ===================================================
-       PREVENT DUPLICATES
+       PREVENT DUPLICATE COMPONENT
     =================================================== */
 
     if (
@@ -91,12 +125,16 @@
 
 
     /* ===================================================
-       MARQUEE HTML
+       SINGLE-VALUE MARQUEE
   
        IMPORTANT:
   
-       Only ONE copy of the value exists.
-       JavaScript decides whether scrolling is needed.
+       Only ONE copy of the text exists.
+  
+       JavaScript activates scrolling only when:
+  
+       1. Screen <= 600px
+       2. Text is wider than available space
     =================================================== */
 
     function marqueeHTML(
@@ -105,19 +143,13 @@
     ) {
 
         return `
+      <span class="dev-marquee ${modifier}">
 
-      <span
-        class="dev-marquee ${modifier}"
-      >
-
-        <span
-          class="dev-marquee__text"
-        >
+        <span class="dev-marquee__text">
           ${escapeHTML(text)}
         </span>
 
       </span>
-
     `;
 
     }
@@ -130,6 +162,7 @@
     function createSkillsHTML() {
 
         return developer.skills
+
             .map(
                 (
                     skill,
@@ -137,9 +170,7 @@
                 ) => {
 
                     const number =
-                        String(
-                            index + 1
-                        )
+                        String(index + 1)
                             .padStart(
                                 2,
                                 "0"
@@ -147,10 +178,7 @@
 
 
                     return `
-
-            <span
-              class="dev-skill"
-            >
+            <span class="dev-skill">
 
               <i>
                 ${number}
@@ -161,18 +189,55 @@
               </span>
 
             </span>
-
           `;
 
                 }
             )
+
             .join("");
 
     }
 
 
     /* ===================================================
-       CONTACT
+       HIGHLIGHTS
+    =================================================== */
+
+    function createHighlightsHTML() {
+
+        return developer.highlights
+
+            .map(
+                highlight => {
+
+                    return `
+            <span class="dev-highlight">
+
+              <strong>
+                ${escapeHTML(
+                        highlight.value
+                    )}
+              </strong>
+
+              <small>
+                ${escapeHTML(
+                        highlight.label
+                    )}
+              </small>
+
+            </span>
+          `;
+
+                }
+            )
+
+            .join("");
+
+    }
+
+
+    /* ===================================================
+       CONTACT FACTORY
     =================================================== */
 
     function createContactHTML({
@@ -185,23 +250,20 @@
     }) {
 
         return `
-
       <a
         href="${escapeAttribute(href)}"
         class="dev-contact dev-contact--${type}"
         aria-label="${escapeAttribute(label)}"
       >
 
-        <span
-          class="dev-contact__icon"
-        >
+        <span class="dev-contact__icon">
+
           ${icon}
+
         </span>
 
 
-        <span
-          class="dev-contact__content"
-        >
+        <span class="dev-contact__content">
 
           <small>
             ${type.toUpperCase()}
@@ -224,7 +286,6 @@
         </span>
 
       </a>
-
     `;
 
     }
@@ -235,7 +296,6 @@
     =================================================== */
 
     const phoneIcon = `
-
     <svg
       viewBox="0 0 24 24"
       aria-hidden="true"
@@ -262,12 +322,10 @@
       />
 
     </svg>
-
   `;
 
 
     const emailIcon = `
-
     <svg
       viewBox="0 0 24 24"
       aria-hidden="true"
@@ -284,11 +342,12 @@
       />
 
       <path
-        d="m22 6-10 7L2 6"
+        d="
+          m22 6-10 7L2 6
+        "
       />
 
     </svg>
-
   `;
 
 
@@ -317,7 +376,7 @@
 
 
     /* ===================================================
-       HTML
+       BUILD HTML
     =================================================== */
 
     signature.innerHTML = `
@@ -342,6 +401,8 @@
     >
 
 
+      <!-- CODE ICON -->
+
       <span
         class="dev-signature__mini-icon"
         aria-hidden="true"
@@ -356,6 +417,8 @@
       </span>
 
 
+
+      <!-- MINI IDENTITY -->
 
       <span
         class="dev-signature__mini-info"
@@ -384,6 +447,8 @@
 
 
 
+      <!-- SAME + / × BUTTON -->
+
       <span
         class="dev-signature__expand"
         aria-hidden="true"
@@ -400,7 +465,7 @@
 
 
     <!-- ===============================================
-         DETAILS
+         EXPANDED DETAILS
     ================================================ -->
 
     <div
@@ -422,6 +487,7 @@
         <div
           class="dev-signature__terminal"
         >
+
 
           <div
             class="dev-signature__terminal-head"
@@ -461,27 +527,77 @@
 
 
 
+          <!-- CODE PROFILE -->
+
           <div
             class="dev-signature__code"
           >
 
-            <span
-              class="dev-code-key"
-            >
-              const
-            </span>
+            <div>
 
-            <span
-              class="dev-code-name"
-            >
-              developer
-            </span>
+              <span class="dev-code-key">
+                const
+              </span>
 
-            <span
+              <span class="dev-code-name">
+                developer
+              </span>
+
+              <span class="dev-code-symbol">
+                = {
+              </span>
+
+            </div>
+
+            <!--
+            <div class="dev-code-line" >
+
+              <span class="dev-code-property">
+                experience
+              </span>
+
+              <span class="dev-code-symbol">
+                :
+              </span>
+
+              <span class="dev-code-string">
+                "${escapeHTML(
+        developer.experience
+    )}"
+              </span>
+
+              <span class="dev-code-symbol">
+                ,
+              </span>
+
+            </div>
+
+
+            <div
+              class="dev-code-line"
+            >
+
+              <span class="dev-code-property">
+                focus
+              </span>
+
+              <span class="dev-code-symbol">
+                :
+              </span>
+
+              <span class="dev-code-string">
+                "Full-Stack • Automation • Robotics"
+              </span>
+
+            </div>
+
+
+            <div
               class="dev-code-symbol"
             >
-              = {
-            </span>
+              };
+            </div>
+            -->
 
           </div>
 
@@ -520,7 +636,7 @@
             <span
               class="dev-signature__eyebrow"
             >
-              DESIGNED &amp; ENGINEERED BY
+              FULL-STACK • AUTOMATION • ROBOTICS
             </span>
 
 
@@ -542,13 +658,29 @@
         developer.title
     )}
 
-              <span>•</span>
+              <span>
+                •
+              </span>
 
               ${escapeHTML(
         developer.specialty
     )}
 
             </p>
+
+          </div>
+
+
+
+          <!-- =========================================
+               PROFESSIONAL HIGHLIGHTS
+          ========================================== -->
+
+          <div
+            class="dev-highlights"
+          >
+
+            ${createHighlightsHTML()}
 
           </div>
 
@@ -586,6 +718,7 @@
           class="dev-signature__contact"
         >
 
+
           ${createContactHTML({
 
         type:
@@ -607,6 +740,7 @@
             phoneIcon
 
     })}
+
 
 
           ${createContactHTML({
@@ -636,12 +770,13 @@
 
 
         <!-- ===========================================
-             FOOTER
+             BOTTOM
         ============================================ -->
 
         <div
           class="dev-signature__footer"
         >
+
 
           <div
             class="dev-signature__status"
@@ -658,6 +793,7 @@
             </span>
 
           </div>
+
 
 
           <div
@@ -688,7 +824,13 @@
 
 
     /* ===================================================
-       INSERT COMPONENT
+       INSERT INTO PAGE
+  
+       Priority:
+  
+       1. [data-dev-signature]
+       2. footer
+       3. body
     =================================================== */
 
     const target =
@@ -768,11 +910,11 @@
     /* ===================================================
        MARQUEE
   
-       NEW RULE:
+       ONLY:
   
-       1. ONLY PHONE.
-       2. ONLY IF TEXT DOES NOT FIT.
-       3. DESKTOP NEVER MOVES.
+       - phone
+       - text does not fit
+       - reduced motion disabled
     =================================================== */
 
     function updateMarquees() {
@@ -795,8 +937,6 @@
                 }
 
 
-                /* Always reset first */
-
                 marquee.classList.remove(
                     "is-overflowing"
                 );
@@ -815,18 +955,13 @@
 
                 /*
                  * Desktop / tablet:
-                 * absolutely no marquee.
+                 * never animate.
                  */
 
                 if (!isPhone) {
                     return;
                 }
 
-
-                /*
-                 * Accessibility:
-                 * don't automatically move text.
-                 */
 
                 if (
                     reducedMotion.matches
@@ -851,18 +986,13 @@
                 }
 
 
-                /*
-                 * Calculate ONLY the hidden part.
-                 */
-
                 const overflow =
                     textWidth -
                     availableWidth;
 
 
                 /*
-                 * Full value already fits:
-                 * DO NOTHING.
+                 * Full text already fits.
                  */
 
                 if (
@@ -871,11 +1001,6 @@
                     return;
                 }
 
-
-                /*
-                 * Move only enough to reveal
-                 * the missing ending.
-                 */
 
                 const distance =
                     overflow + 3;
@@ -916,115 +1041,160 @@
 
 
     /* ===================================================
-       EXPANDED HEIGHT
+       OPEN COMPONENT
+  
+       Uses real height rather than max-height.
+  
+       This gives an exact animation.
     =================================================== */
 
-    function updateExpandedHeight() {
+    function openSignature() {
 
-        if (!isExpanded) {
+        if (isExpanded) {
             return;
         }
 
 
-        details.style.maxHeight =
-            `${detailsInner.scrollHeight}px`;
+        isExpanded =
+            true;
+
+
+        signature.classList.add(
+            "is-expanded"
+        );
+
+
+        toggle.setAttribute(
+            "aria-expanded",
+            "true"
+        );
+
+
+        details.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+        // keep scroll to bottom till expanding animation ends about 1s, and keep scroll each 100ms till animation ends
+        const scrollInterval = setInterval(() => {
+            // fix the osilation of scroll
+            if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+                clearInterval(scrollInterval);
+            }
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: "smooth"
+            });
+        }, 50);
+        setTimeout(() => {
+            clearInterval(scrollInterval);
+        }, 1000);
+
+
+        /*
+         * Start at zero.
+         */
+
+        details.style.height =
+            "0px";
+
+
+        /*
+         * Reset skill rail.
+         */
+
+        if (skills) {
+
+            skills.scrollLeft =
+                0;
+
+
+            skillsDirection =
+                1;
+
+
+            pauseSkills(
+                900
+            );
+
+        }
+
+
+        requestAnimationFrame(
+            () => {
+
+                updateMarquees();
+
+
+                details.style.height =
+                    `${detailsInner.scrollHeight}px`;
+
+            }
+        );
+
 
     }
 
 
 
     /* ===================================================
-       OPEN / CLOSE
+       CLOSE COMPONENT
+  
+       Converts "auto" height back into its exact
+       pixel height before animating to zero.
+  
+       This fixes the component remaining too tall.
     =================================================== */
 
-    function setExpanded(expanded) {
+    function closeSignature() {
 
-        if (
-            expanded === isExpanded
-        ) {
+        if (!isExpanded) {
             return;
         }
 
 
+        const currentHeight =
+            details.getBoundingClientRect()
+                .height;
+
+
+        details.style.height =
+            `${currentHeight}px`;
+
+
+        /*
+         * Force browser reflow.
+         */
+
+        void details.offsetHeight;
+
+
         isExpanded =
-            expanded;
+            false;
+
+
+        signature.classList.remove(
+            "is-expanded"
+        );
 
 
         toggle.setAttribute(
             "aria-expanded",
-            String(expanded)
+            "false"
         );
 
 
         details.setAttribute(
             "aria-hidden",
-            String(!expanded)
+            "true"
         );
-
-
-
-        /* OPEN */
-
-        if (expanded) {
-
-            signature.classList.add(
-                "is-expanded"
-            );
-
-
-            details.style.maxHeight =
-                "0px";
-
-
-            requestAnimationFrame(
-                () => {
-
-                    updateMarquees();
-
-
-                    details.style.maxHeight =
-                        `${detailsInner.scrollHeight}px`;
-
-                }
-            );
-
-            // repeat scrolling to the end of the page for 1 s
-            let scrollInterval = setInterval(() => {
-                window.scrollTo({
-                    top: document.body.scrollHeight,
-                    behavior: "smooth"
-                });
-            }, 50);
-
-            setTimeout(() => {
-                clearInterval(scrollInterval);
-            }, 1000);
-
-
-            return;
-        }
-
-
-
-        /* CLOSE */
-
-        details.style.maxHeight =
-            `${detailsInner.scrollHeight}px`;
-
-
-        void details.offsetHeight;
 
 
         requestAnimationFrame(
             () => {
 
-                details.style.maxHeight =
+                details.style.height =
                     "0px";
-
-
-                signature.classList.remove(
-                    "is-expanded"
-                );
 
             }
         );
@@ -1034,16 +1204,22 @@
 
 
     /* ===================================================
-       TOGGLE
+       TOGGLE WITH SAME BUTTON
     =================================================== */
 
     toggle.addEventListener(
         "click",
         () => {
 
-            setExpanded(
-                !isExpanded
-            );
+            if (isExpanded) {
+
+                closeSignature();
+
+            } else {
+
+                openSignature();
+
+            }
 
         }
     );
@@ -1051,7 +1227,45 @@
 
 
     /* ===================================================
-       ESCAPE
+       DETAILS TRANSITION FINISHED
+    =================================================== */
+
+    details.addEventListener(
+        "transitionend",
+        event => {
+
+            if (
+                event.propertyName !==
+                "height"
+            ) {
+                return;
+            }
+
+
+            /*
+             * Once fully open,
+             * use auto height so content stays responsive.
+             */
+
+            if (isExpanded) {
+
+                details.style.height =
+                    "auto";
+
+            } else {
+
+                details.style.height =
+                    "0px";
+
+            }
+
+        }
+    );
+
+
+
+    /* ===================================================
+       ESCAPE CLOSES
     =================================================== */
 
     document.addEventListener(
@@ -1063,7 +1277,7 @@
                 isExpanded
             ) {
 
-                setExpanded(false);
+                closeSignature();
 
 
                 toggle.focus();
@@ -1076,7 +1290,7 @@
 
 
     /* ===================================================
-       SKILLS
+       SKILLS AUTO SCROLLER
     =================================================== */
 
     let skillsDirection =
@@ -1121,7 +1335,13 @@
 
 
     /* ===================================================
-       SKILLS AUTO MOVE
+       AUTO MOVE
+  
+       Real scrollLeft.
+  
+       No duplicated skills.
+       No fake transform.
+       No empty ending.
     =================================================== */
 
     function animateSkills(now) {
@@ -1151,7 +1371,7 @@
             );
 
 
-        const canAutoMove =
+        const canMove =
             isExpanded &&
             !reducedMotion.matches &&
             !skillsDragging &&
@@ -1159,7 +1379,7 @@
             maxScroll > 1;
 
 
-        if (canAutoMove) {
+        if (canMove) {
 
             const speed =
                 phoneMedia.matches
@@ -1178,8 +1398,13 @@
                 );
 
 
+            /*
+             * RIGHT EDGE
+             */
+
             if (
-                nextPosition >= maxScroll
+                nextPosition >=
+                maxScroll
             ) {
 
                 nextPosition =
@@ -1195,6 +1420,10 @@
 
             }
 
+
+            /*
+             * LEFT EDGE
+             */
 
             if (
                 nextPosition <= 0
@@ -1229,7 +1458,7 @@
 
 
     /* ===================================================
-       DESKTOP SKILL DRAG
+       DESKTOP MOUSE DRAG
     =================================================== */
 
     function startSkillDrag(event) {
@@ -1238,6 +1467,10 @@
             5000
         );
 
+
+        /*
+         * Phones use native touch swipe.
+         */
 
         if (
             event.pointerType !==
@@ -1292,9 +1525,27 @@
             dragStartX;
 
 
-        skills.scrollLeft =
+        const maxScroll =
+            Math.max(
+                0,
+                skills.scrollWidth -
+                skills.clientWidth
+            );
+
+
+        const next =
             dragStartScroll -
             distance;
+
+
+        skills.scrollLeft =
+            Math.max(
+                0,
+                Math.min(
+                    next,
+                    maxScroll
+                )
+            );
 
 
         pauseSkills(
@@ -1344,7 +1595,7 @@
 
 
     /* ===================================================
-       SKILLS MOUSE WHEEL
+       DESKTOP MOUSE WHEEL
     =================================================== */
 
     function handleSkillsWheel(event) {
@@ -1371,7 +1622,9 @@
                 Math.abs(
                     event.deltaY
                 )
+
                 ? event.deltaX
+
                 : event.deltaY;
 
 
@@ -1403,6 +1656,11 @@
             );
 
 
+        /*
+         * Let the normal page scroll when
+         * the skills are already at the edge.
+         */
+
         if (!canMove) {
             return;
         }
@@ -1411,8 +1669,19 @@
         event.preventDefault();
 
 
-        skills.scrollLeft +=
+        const next =
+            skills.scrollLeft +
             movement;
+
+
+        skills.scrollLeft =
+            Math.max(
+                0,
+                Math.min(
+                    next,
+                    maxScroll
+                )
+            );
 
 
         pauseSkills(
@@ -1528,9 +1797,6 @@
         updateMarquees();
 
 
-        updateExpandedHeight();
-
-
         if (!skills) {
             return;
         }
@@ -1544,11 +1810,15 @@
             );
 
 
-        skills.scrollLeft =
-            Math.min(
-                skills.scrollLeft,
-                maxScroll
-            );
+        if (
+            skills.scrollLeft >
+            maxScroll
+        ) {
+
+            skills.scrollLeft =
+                maxScroll;
+
+        }
 
     }
 
@@ -1559,10 +1829,17 @@
     );
 
 
-    phoneMedia.addEventListener(
-        "change",
-        handleResize
-    );
+    if (
+        typeof phoneMedia.addEventListener ===
+        "function"
+    ) {
+
+        phoneMedia.addEventListener(
+            "change",
+            handleResize
+        );
+
+    }
 
 
 
@@ -1576,14 +1853,7 @@
 
         const resizeObserver =
             new ResizeObserver(
-                () => {
-
-                    updateMarquees();
-
-
-                    updateExpandedHeight();
-
-                }
+                updateMarquees
             );
 
 
@@ -1599,7 +1869,7 @@
        INITIAL STATE
     =================================================== */
 
-    details.style.maxHeight =
+    details.style.height =
         "0px";
 
 

@@ -1,5 +1,7 @@
 /* =====================================================
+   MURTADHA ALTUFaily
    REUSABLE DEVELOPER SIGNATURE
+
    File: dev.css
 ===================================================== */
 
@@ -11,19 +13,27 @@
 .dev-signature {
     --dev-green: #84dc9e;
     --dev-green-strong: #50c978;
+    --dev-purple: #c792ea;
+    --dev-blue: #82aaff;
+    --dev-cyan: #89ddff;
+    --dev-yellow: #f4d06f;
 
     position: relative;
+
     isolation: isolate;
+
     overflow: hidden;
 
-    width: min(720px, calc(100% - 24px));
-
-    margin: 28px auto 12px;
+    width:
+        min(720px,
+            calc(100% - 24px));
 
     direction: ltr;
+
     text-align: left;
 
-    color: #ffffff;
+    color:
+        #ffffff;
 
     background:
         linear-gradient(145deg,
@@ -32,14 +42,15 @@
             #0d2818 100%);
 
     border:
-        1px solid rgba(132, 220, 158, 0.16);
+        1px solid rgba(132, 220, 158, .16);
 
-    border-radius: 20px;
+    border-radius:
+        20px;
 
     box-shadow:
-        0 22px 55px rgba(0, 0, 0, 0.22),
+        0 22px 55px rgba(0, 0, 0, .22),
 
-        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        inset 0 1px 0 rgba(255, 255, 255, .05);
 
     font-family:
         Inter,
@@ -50,53 +61,63 @@
         "Segoe UI",
         sans-serif;
 
-    box-sizing: border-box;
+    box-sizing:
+        border-box;
 }
 
 
 .dev-signature *,
 .dev-signature *::before,
 .dev-signature *::after {
-    box-sizing: border-box;
+    box-sizing:
+        border-box;
 }
 
 
 .dev-signature a {
-    color: inherit;
+    color:
+        inherit;
 
-    text-decoration: none;
+    text-decoration:
+        none;
 }
 
 
 .dev-signature button {
-    font: inherit;
+    font:
+        inherit;
 }
 
 
 /* =====================================================
-   2. DECORATIVE BACKGROUND
+   2. BACKGROUND GRID
 ===================================================== */
 
 .dev-signature::after {
     content: "";
 
-    position: absolute;
+    position:
+        absolute;
 
-    inset: 0;
+    inset:
+        0;
 
-    z-index: -2;
+    z-index:
+        -2;
 
-    opacity: 0.11;
+    opacity:
+        .11;
 
-    pointer-events: none;
+    pointer-events:
+        none;
 
     background-image:
 
-        linear-gradient(rgba(132, 220, 158, 0.12) 1px,
+        linear-gradient(rgba(132, 220, 158, .12) 1px,
             transparent 1px),
 
         linear-gradient(90deg,
-            rgba(132, 220, 158, 0.12) 1px,
+            rgba(132, 220, 158, .12) 1px,
             transparent 1px);
 
     background-size:
@@ -104,94 +125,120 @@
 }
 
 
+/* =====================================================
+   3. GLOW
+===================================================== */
+
 .dev-signature__glow {
-    position: absolute;
+    position:
+        absolute;
 
-    z-index: -1;
+    z-index:
+        -1;
 
-    top: -150px;
+    top:
+        -150px;
 
-    right: -100px;
+    right:
+        -100px;
 
-    width: 300px;
+    width:
+        300px;
 
-    height: 300px;
+    height:
+        300px;
 
-    border-radius: 50%;
+    border-radius:
+        50%;
 
     background:
-        rgba(73, 211, 115, 0.17);
+        rgba(73, 211, 115, .17);
 
     filter:
         blur(75px);
 
-    pointer-events: none;
+    pointer-events:
+        none;
 }
 
 
 /* =====================================================
-   3. PERMANENT HEADER
+   4. PERMANENT HEADER
 ===================================================== */
 
 .dev-signature__toggle {
-    position: relative;
+    position:
+        relative;
 
-    z-index: 5;
+    z-index:
+        5;
 
-    display: grid;
+    display:
+        grid;
 
     grid-template-columns:
         46px minmax(0, 1fr) 32px;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 12px;
+    gap:
+        12px;
 
-    width: 100%;
+    width:
+        100%;
 
-    min-height: 68px;
+    min-height:
+        68px;
 
-    margin: 0;
+    margin:
+        0;
 
     padding:
         10px 13px;
 
-    border: 0;
+    border:
+        0;
 
-    color: #ffffff;
+    color:
+        #ffffff;
 
     background:
         transparent;
 
-    text-align: left;
+    text-align:
+        left;
 
-    cursor: pointer;
+    cursor:
+        pointer;
 
-    appearance: none;
+    appearance:
+        none;
 
-    -webkit-appearance: none;
+    -webkit-appearance:
+        none;
 
     -webkit-tap-highlight-color:
         transparent;
 
     transition:
-        background 0.25s ease,
-        border-color 0.25s ease;
+        background .25s ease,
+        border-color .25s ease;
 }
 
 
 .dev-signature__toggle:hover {
     background:
-        rgba(255, 255, 255, 0.025);
+        rgba(255, 255, 255, .025);
 }
 
 
 .dev-signature.is-expanded .dev-signature__toggle {
     background:
-        rgba(0, 0, 0, 0.08);
+        rgba(0, 0, 0, .08);
 
     border-bottom:
-        1px solid rgba(255, 255, 255, 0.055);
+        1px solid rgba(255, 255, 255, .055);
 }
 
 
@@ -205,30 +252,36 @@
 
 
 /* =====================================================
-   4. MINI </> ICON
+   5. MINI CODE ICON
 ===================================================== */
 
 .dev-signature__mini-icon {
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    justify-content: center;
+    justify-content:
+        center;
 
-    width: 46px;
+    width:
+        46px;
 
-    height: 46px;
+    height:
+        46px;
 
-    border-radius: 14px;
+    border-radius:
+        14px;
 
     color:
         var(--dev-green);
 
     background:
-        rgba(132, 220, 158, 0.085);
+        rgba(132, 220, 158, .085);
 
     border:
-        1px solid rgba(132, 220, 158, 0.17);
+        1px solid rgba(132, 220, 158, .17);
 
     font-family:
         Consolas,
@@ -236,18 +289,21 @@
         "Courier New",
         monospace;
 
-    font-size: 13px;
+    font-size:
+        13px;
 
-    font-weight: 900;
+    font-weight:
+        900;
 
-    line-height: 1;
+    line-height:
+        1;
 
     transition:
-        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        transform .35s cubic-bezier(.22, 1, .36, 1),
 
-        background 0.3s ease,
+        background .3s ease,
 
-        border-color 0.3s ease;
+        border-color .3s ease;
 }
 
 
@@ -256,9 +312,10 @@
         0 1px;
 
     color:
-        rgba(255, 255, 255, 0.92);
+        rgba(255, 255, 255, .92);
 
-    font-weight: inherit;
+    font-weight:
+        inherit;
 }
 
 
@@ -267,131 +324,155 @@
         rotate(-4deg) scale(1.04);
 
     background:
-        rgba(132, 220, 158, 0.12);
+        rgba(132, 220, 158, .12);
 
     border-color:
-        rgba(132, 220, 158, 0.28);
+        rgba(132, 220, 158, .28);
 }
 
 
 /* =====================================================
-   5. MINI DEVELOPER INFORMATION
+   6. MINI IDENTITY
 ===================================================== */
 
 .dev-signature__mini-info {
-    display: grid;
+    display:
+        grid;
 
-    min-width: 0;
+    min-width:
+        0;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
-    line-height: 1.15;
+    line-height:
+        1.15;
 }
 
 
 .dev-signature__mini-info small {
-    display: block;
+    display:
+        block;
 
-    margin-bottom: 3px;
+    margin-bottom:
+        3px;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
     color:
         var(--dev-green);
 
-    font-size: 6.5px;
+    font-size:
+        6.5px;
 
-    font-weight: 800;
+    font-weight:
+        800;
 
-    letter-spacing: 0.16em;
+    letter-spacing:
+        .16em;
 
-    white-space: nowrap;
+    white-space:
+        nowrap;
 
-    text-overflow: ellipsis;
+    text-overflow:
+        ellipsis;
 }
 
 
 .dev-signature__mini-title {
-    display: block;
+    display:
+        block;
 
-    margin-top: 4px;
+    margin-top:
+        4px;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
     color:
-        rgba(255, 255, 255, 0.43);
+        rgba(255, 255, 255, .44);
 
-    font-size: 8.5px;
+    font-size:
+        8.5px;
 
-    font-weight: 600;
+    font-weight:
+        600;
 
-    white-space: nowrap;
+    white-space:
+        nowrap;
 
-    text-overflow: ellipsis;
+    text-overflow:
+        ellipsis;
 }
 
 
 /* =====================================================
-   6. + / × BUTTON
+   7. + / × BUTTON
 ===================================================== */
 
 .dev-signature__expand {
-    position: relative;
+    position:
+        relative;
 
-    display: grid;
+    display:
+        grid;
 
-    place-items: center;
+    place-items:
+        center;
 
-    width: 32px;
+    width:
+        32px;
 
-    height: 32px;
+    height:
+        32px;
 
     border:
-        1px solid rgba(132, 220, 158, 0.10);
+        1px solid rgba(132, 220, 158, .10);
 
-    border-radius: 10px;
+    border-radius:
+        10px;
 
     color:
         var(--dev-green);
 
     background:
-        rgba(132, 220, 158, 0.07);
+        rgba(132, 220, 158, .07);
 
     transition:
-        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        transform .4s cubic-bezier(.22, 1, .36, 1),
 
-        background 0.25s ease,
+        background .25s ease,
 
-        border-color 0.25s ease;
+        border-color .25s ease;
 }
 
 
 .dev-signature__expand i {
-    position: absolute;
+    position:
+        absolute;
 
-    width: 12px;
+    width:
+        12px;
 
-    height: 2px;
+    height:
+        2px;
 
-    border-radius: 20px;
+    border-radius:
+        20px;
 
     background:
         currentColor;
 
     transition:
-        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-
-    transform: rotate(45deg) translate(-45%, 0px);
+        transform .35s cubic-bezier(.22, 1, .36, 1);
+    transform: rotate(-45deg) translate(45%, 0px);
     top: 60%;
 }
 
 
-/* vertical part of + */
-
 .dev-signature__expand i:nth-child(2) {
-    transform:
-        rotate(90deg);
-    transform: rotate(-45deg) translate(45%, 0px);
+    transform: rotate(45deg) translate(-45%, 0px);
 }
 
 
@@ -402,95 +483,118 @@
         rotate(180deg);
 
     background:
-        rgba(132, 220, 158, 0.13);
+        rgba(132, 220, 158, .13);
 
     border-color:
-        rgba(132, 220, 158, 0.20);
+        rgba(132, 220, 158, .20);
+}
+
+.dev-signature.is-expanded .dev-marquee--mini-name {
+    display: none;
 }
 
 
 .dev-signature.is-expanded .dev-signature__expand i:first-child {
-    transform: rotate(-45deg) translate(45%, 0px);
-}
-
-
-.dev-signature.is-expanded .dev-signature__expand i:nth-child(2) {
     transform: rotate(45deg) translate(-45%, 0px);
 }
 
 
+.dev-signature.is-expanded .dev-signature__expand i:nth-child(2) {
+    transform: rotate(-45deg) translate(45%, 0px);
+}
+
+
 /* =====================================================
-   7. EXPANDABLE DETAILS
+   8. EXPANDABLE DETAILS
 ===================================================== */
 
 .dev-signature__details {
-    max-height: 0;
+    height:
+        0;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
-    opacity: 0;
+    opacity:
+        0;
 
-    visibility: hidden;
+    visibility:
+        hidden;
 
     transition:
-        max-height 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+        height .58s cubic-bezier(.22, 1, .36, 1),
 
-        opacity 0.30s ease,
+        opacity .26s ease,
 
-        visibility 0.65s;
+        visibility 0s linear .58s;
 }
 
 
 .dev-signature.is-expanded .dev-signature__details {
-    opacity: 1;
+    opacity:
+        1;
 
-    visibility: visible;
+    visibility:
+        visible;
+
+    transition:
+        height .58s cubic-bezier(.22, 1, .36, 1),
+
+        opacity .26s ease,
+
+        visibility 0s;
 }
 
 
 .dev-signature__details-inner {
-    width: 100%;
+    width:
+        100%;
 }
 
 
 /* =====================================================
-   8. TEXT MARQUEE
+   9. MARQUEE
+
+   DESKTOP:
+   NEVER MOVES.
+
+   PHONE:
+   ONLY MOVES WHEN JS DETECTS OVERFLOW.
 ===================================================== */
 
-/*
-   IMPORTANT
-
-   Desktop / tablet:
-   text never moves.
-
-   Phone:
-   JavaScript adds .is-overflowing ONLY
-   when the text is wider than its container.
-*/
-
 .dev-marquee {
-    position: relative;
+    position:
+        relative;
 
-    display: block;
+    display:
+        block;
 
-    width: 100%;
+    width:
+        100%;
 
-    min-width: 0;
+    min-width:
+        0;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
-    white-space: nowrap;
+    white-space:
+        nowrap;
 }
 
 
 .dev-marquee__text {
-    display: block;
+    display:
+        block;
 
-    width: max-content;
+    width:
+        max-content;
 
-    max-width: none;
+    max-width:
+        none;
 
-    white-space: nowrap;
+    white-space:
+        nowrap;
 
     transform:
         translateX(0);
@@ -498,7 +602,7 @@
 
 
 /* =====================================================
-   9. DESKTOP / TABLET MARQUEE DISABLED
+   10. DESKTOP MARQUEE DISABLED
 ===================================================== */
 
 @media (min-width: 601px) {
@@ -515,7 +619,7 @@
 
 
 /* =====================================================
-   10. MOBILE MARQUEE
+   11. MOBILE MARQUEE
 ===================================================== */
 
 @media (max-width: 600px) {
@@ -537,11 +641,6 @@
     }
 
 
-    /*
-     Text fits:
-     no animation.
-  */
-
     .dev-marquee:not(.is-overflowing) .dev-marquee__text {
         animation:
             none;
@@ -550,11 +649,6 @@
             translateX(0);
     }
 
-
-    /*
-     Text does not fit:
-     JS adds .is-overflowing.
-  */
 
     .dev-marquee.is-overflowing .dev-marquee__text {
         animation:
@@ -569,7 +663,7 @@
 
 
 /* =====================================================
-   11. MARQUEE MOVEMENT
+   12. MARQUEE MOVEMENT
 ===================================================== */
 
 @keyframes devMarqueeMove {
@@ -592,7 +686,7 @@
 
 
 /* =====================================================
-   12. NAME
+   13. NAME
 ===================================================== */
 
 .dev-marquee--name .dev-marquee__text {
@@ -604,78 +698,91 @@
             4vw,
             26px);
 
-    font-weight: 800;
+    font-weight:
+        800;
 
-    line-height: 1.15;
+    line-height:
+        1.15;
 
     letter-spacing:
-        -0.03em;
+        -.03em;
 }
 
 
 .dev-marquee--mini-name .dev-marquee__text {
-    font-size: 14px;
+    font-size:
+        14px;
 
     letter-spacing:
-        -0.01em;
+        -.01em;
 }
 
 
 /* =====================================================
-   13. PHONE / EMAIL
+   14. PHONE / EMAIL
 ===================================================== */
 
 .dev-marquee--phone .dev-marquee__text,
 
 .dev-marquee--email .dev-marquee__text {
     color:
-        rgba(255, 255, 255, 0.86);
+        rgba(255, 255, 255, .86);
 
-    font-size: 9px;
+    font-size:
+        9px;
 
-    font-weight: 650;
+    font-weight:
+        650;
 }
 
 
 /* =====================================================
-   14. TERMINAL
+   15. TERMINAL
 ===================================================== */
 
 .dev-signature__terminal {
     padding:
-        12px 17px 11px;
+        12px 17px 12px;
 
     background:
-        rgba(0, 0, 0, 0.14);
+        rgba(0, 0, 0, .14);
 
     border-bottom:
-        1px solid rgba(255, 255, 255, 0.055);
+        1px solid rgba(255, 255, 255, .055);
 }
 
 
 .dev-signature__terminal-head {
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    min-width: 0;
+    min-width:
+        0;
 
-    gap: 9px;
+    gap:
+        9px;
 
-    margin-bottom: 8px;
+    margin-bottom:
+        9px;
 }
 
 
 /* =====================================================
-   15. TERMINAL DOTS
+   16. TERMINAL DOTS
 ===================================================== */
 
 .dev-terminal-dots {
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 5px;
+    gap:
+        5px;
 
     flex:
         0 0 auto;
@@ -683,11 +790,14 @@
 
 
 .dev-terminal-dots span {
-    width: 7px;
+    width:
+        7px;
 
-    height: 7px;
+    height:
+        7px;
 
-    border-radius: 50%;
+    border-radius:
+        50%;
 }
 
 
@@ -709,17 +819,15 @@
 }
 
 
-/* =====================================================
-   16. TERMINAL FILE NAME
-===================================================== */
-
 .dev-signature__terminal-head small {
-    min-width: 0;
+    min-width:
+        0;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
     color:
-        rgba(255, 255, 255, 0.38);
+        rgba(255, 255, 255, .38);
 
     font-family:
         Consolas,
@@ -727,14 +835,17 @@
         "Courier New",
         monospace;
 
-    font-size: 8px;
+    font-size:
+        8px;
 
     letter-spacing:
-        0.08em;
+        .08em;
 
-    white-space: nowrap;
+    white-space:
+        nowrap;
 
-    text-overflow: ellipsis;
+    text-overflow:
+        ellipsis;
 }
 
 
@@ -743,55 +854,64 @@
 ===================================================== */
 
 .dev-terminal-status {
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 5px;
+    gap:
+        5px;
 
     flex:
         0 0 auto;
 
-    margin-left: auto;
+    margin-left:
+        auto;
 
     color:
-        rgba(132, 220, 158, 0.72);
+        rgba(132, 220, 158, .72);
 
     font-family:
         Consolas,
         monospace;
 
-    font-size: 6px;
+    font-size:
+        6px;
 
     letter-spacing:
-        0.12em;
+        .12em;
 }
 
 
 .dev-terminal-status i {
-    width: 5px;
+    width:
+        5px;
 
-    height: 5px;
+    height:
+        5px;
 
-    border-radius: 50%;
+    border-radius:
+        50%;
 
     background:
         var(--dev-green-strong);
 
     box-shadow:
-        0 0 7px rgba(80, 201, 120, 0.70);
+        0 0 7px rgba(80, 201, 120, .7);
 }
 
 
 /* =====================================================
-   18. TERMINAL CODE LINE
+   18. TERMINAL CODE
 ===================================================== */
 
 .dev-signature__code {
-    overflow: hidden;
+    overflow:
+        hidden;
 
     color:
-        rgba(255, 255, 255, 0.60);
+        rgba(255, 255, 255, .60);
 
     font-family:
         Consolas,
@@ -799,46 +919,72 @@
         "Courier New",
         monospace;
 
-    font-size: 10px;
+    font-size:
+        9px;
 
-    white-space: nowrap;
+    line-height:
+        1.6;
+
+    white-space:
+        nowrap;
+}
+
+
+.dev-code-line {
+    padding-left:
+        16px;
 }
 
 
 .dev-code-key {
     color:
-        #c792ea;
+        var(--dev-purple);
 }
 
 
 .dev-code-name {
     color:
-        #82aaff;
+        var(--dev-blue);
 }
 
 
 .dev-code-symbol {
     color:
-        #89ddff;
+        var(--dev-cyan);
+}
+
+
+.dev-code-property {
+    color:
+        var(--dev-blue);
+}
+
+
+.dev-code-string {
+    color:
+        var(--dev-yellow);
 }
 
 
 /* =====================================================
-   19. MAIN PROFILE
+   19. PROFILE
 ===================================================== */
 
 .dev-signature__main {
-    display: grid;
+    display:
+        grid;
 
     grid-template-columns:
         64px minmax(0, 1fr);
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 16px;
+    gap:
+        16px;
 
     padding:
-        22px 21px 16px;
+        21px 21px 15px;
 }
 
 
@@ -847,37 +993,48 @@
 ===================================================== */
 
 .dev-signature__avatar {
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    justify-content: center;
+    justify-content:
+        center;
 
-    width: 64px;
+    width:
+        64px;
 
-    height: 64px;
+    height:
+        64px;
 
     border:
-        1px solid rgba(132, 220, 158, 0.19);
+        1px solid rgba(132, 220, 158, .19);
 
-    border-radius: 18px;
+    border-radius:
+        18px;
 
     color:
         var(--dev-green);
 
     background:
         linear-gradient(145deg,
-            rgba(132, 220, 158, 0.12),
-            rgba(132, 220, 158, 0.025));
+            rgba(132, 220, 158, .12),
+            rgba(132, 220, 158, .025));
 
     font-family:
         Consolas,
         Monaco,
         monospace;
 
-    font-size: 18px;
+    font-size:
+        18px;
 
-    font-weight: 900;
+    font-weight:
+        900;
+
+    box-shadow:
+        inset 0 0 25px rgba(132, 220, 158, .025);
 }
 
 
@@ -886,48 +1043,59 @@
         0 1px;
 
     color:
-        rgba(255, 255, 255, 0.92);
+        rgba(255, 255, 255, .92);
 }
 
 
 /* =====================================================
-   21. PROFILE INFORMATION
+   21. PROFILE IDENTITY
 ===================================================== */
 
 .dev-signature__identity {
-    min-width: 0;
+    min-width:
+        0;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 }
 
 
 .dev-signature__eyebrow {
-    display: block;
+    display:
+        block;
 
-    margin-bottom: 4px;
+    margin-bottom:
+        4px;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
     color:
         var(--dev-green);
 
-    font-size: 7px;
+    font-size:
+        6.5px;
 
-    font-weight: 800;
+    font-weight:
+        800;
 
     letter-spacing:
-        0.17em;
+        .15em;
 
-    white-space: nowrap;
+    white-space:
+        nowrap;
 
-    text-overflow: ellipsis;
+    text-overflow:
+        ellipsis;
 }
 
 
 .dev-signature__name-line {
-    min-width: 0;
+    min-width:
+        0;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 }
 
 
@@ -935,18 +1103,23 @@
     margin:
         6px 0 0;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
     color:
-        rgba(255, 255, 255, 0.52);
+        rgba(255, 255, 255, .52);
 
-    font-size: 10px;
+    font-size:
+        10px;
 
-    font-weight: 600;
+    font-weight:
+        600;
 
-    white-space: nowrap;
+    white-space:
+        nowrap;
 
-    text-overflow: ellipsis;
+    text-overflow:
+        ellipsis;
 }
 
 
@@ -960,26 +1133,151 @@
 
 
 /* =====================================================
-   22. SKILLS SCROLLER
+   22. PROFESSIONAL HIGHLIGHTS
+===================================================== */
+
+.dev-highlights {
+    grid-column:
+        1 / -1;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,
+            minmax(0, 1fr));
+
+    gap:
+        6px;
+
+    width:
+        100%;
+
+    margin-top:
+        4px;
+}
+
+
+.dev-highlight {
+    display:
+        grid;
+
+    min-width:
+        0;
+
+    padding:
+        8px 6px;
+
+    border:
+        1px solid rgba(132, 220, 158, .09);
+
+    border-radius:
+        10px;
+
+    background:
+        rgba(132, 220, 158, .035);
+
+    text-align:
+        center;
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease,
+        background .2s ease;
+}
+
+
+.dev-highlight:hover {
+    transform:
+        translateY(-2px);
+
+    border-color:
+        rgba(132, 220, 158, .22);
+
+    background:
+        rgba(132, 220, 158, .07);
+}
+
+
+.dev-highlight strong {
+    overflow:
+        hidden;
+
+    color:
+        #ffffff;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    white-space:
+        nowrap;
+
+    text-overflow:
+        ellipsis;
+}
+
+
+.dev-highlight small {
+    margin-top:
+        3px;
+
+    overflow:
+        hidden;
+
+    color:
+        rgba(132, 220, 158, .55);
+
+    font-size:
+        5.5px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .08em;
+
+    text-transform:
+        uppercase;
+
+    white-space:
+        nowrap;
+
+    text-overflow:
+        ellipsis;
+}
+
+
+/* =====================================================
+   23. SKILLS SCROLLER
 ===================================================== */
 
 .dev-skills {
-    position: relative;
+    position:
+        relative;
 
     grid-column:
         1 / -1;
 
-    width: 100%;
+    width:
+        100%;
 
-    min-width: 0;
+    min-width:
+        0;
 
-    margin-top: 4px;
+    margin-top:
+        5px;
 
-    overflow-x: auto;
+    overflow-x:
+        auto;
 
-    overflow-y: hidden;
+    overflow-y:
+        hidden;
 
-    scrollbar-width: none;
+    scrollbar-width:
+        none;
 
     overscroll-behavior-x:
         contain;
@@ -1016,7 +1314,8 @@
 
 
 .dev-skills::-webkit-scrollbar {
-    display: none;
+    display:
+        none;
 }
 
 
@@ -1027,35 +1326,43 @@
 
 
 /* =====================================================
-   23. SKILLS TRACK
+   24. SKILLS TRACK
 ===================================================== */
 
 .dev-skills__track {
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 6px;
+    gap:
+        6px;
 
-    width: max-content;
+    width:
+        max-content;
 
-    min-width: max-content;
+    min-width:
+        max-content;
 
     padding:
-        3px 2px 6px;
+        3px 0 6px;
 }
 
 
 /* =====================================================
-   24. SKILL ITEM
+   25. SKILL ITEM
 ===================================================== */
 
 .dev-skill {
-    display: inline-flex;
+    display:
+        inline-flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 6px;
+    gap:
+        6px;
 
     flex:
         0 0 auto;
@@ -1064,42 +1371,48 @@
         5px 9px;
 
     border:
-        1px solid rgba(255, 255, 255, 0.065);
+        1px solid rgba(255, 255, 255, .065);
 
-    border-radius: 8px;
+    border-radius:
+        8px;
 
     color:
-        rgba(255, 255, 255, 0.72);
+        rgba(255, 255, 255, .72);
 
     background:
-        rgba(255, 255, 255, 0.04);
+        rgba(255, 255, 255, .04);
 
     font-family:
         Consolas,
         Monaco,
         monospace;
 
-    font-size: 8px;
+    font-size:
+        8px;
 
-    font-weight: 700;
+    font-weight:
+        700;
 
-    white-space: nowrap;
+    white-space:
+        nowrap;
 
     transition:
-        transform 0.2s ease,
-        color 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease;
+        transform .2s ease,
+        color .2s ease,
+        background .2s ease,
+        border-color .2s ease;
 }
 
 
 .dev-skill i {
     color:
-        rgba(132, 220, 158, 0.46);
+        rgba(132, 220, 158, .46);
 
-    font-size: 6px;
+    font-size:
+        6px;
 
-    font-style: normal;
+    font-style:
+        normal;
 }
 
 
@@ -1111,25 +1424,27 @@
         var(--dev-green);
 
     border-color:
-        rgba(132, 220, 158, 0.22);
+        rgba(132, 220, 158, .22);
 
     background:
-        rgba(132, 220, 158, 0.07);
+        rgba(132, 220, 158, .07);
 }
 
 
 /* =====================================================
-   25. CONTACTS
+   26. CONTACTS
 ===================================================== */
 
 .dev-signature__contact {
-    display: grid;
+    display:
+        grid;
 
     grid-template-columns:
         repeat(2,
             minmax(0, 1fr));
 
-    gap: 8px;
+    gap:
+        8px;
 
     padding:
         0 21px 19px;
@@ -1137,18 +1452,23 @@
 
 
 .dev-contact {
-    display: grid;
+    display:
+        grid;
 
     grid-template-columns:
         36px minmax(0, 1fr) 23px;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 9px;
+    gap:
+        9px;
 
-    min-width: 0;
+    min-width:
+        0;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
     padding:
         9px 10px;
@@ -1157,17 +1477,18 @@
         #ffffff;
 
     background:
-        rgba(255, 255, 255, 0.037);
+        rgba(255, 255, 255, .037);
 
     border:
-        1px solid rgba(255, 255, 255, 0.065);
+        1px solid rgba(255, 255, 255, .065);
 
-    border-radius: 13px;
+    border-radius:
+        13px;
 
     transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease;
+        transform .2s ease,
+        background .2s ease,
+        border-color .2s ease;
 }
 
 
@@ -1176,108 +1497,131 @@
         translateY(-2px);
 
     background:
-        rgba(132, 220, 158, 0.065);
+        rgba(132, 220, 158, .065);
 
     border-color:
-        rgba(132, 220, 158, 0.25);
+        rgba(132, 220, 158, .25);
 }
 
 
 /* =====================================================
-   26. CONTACT ICON
+   27. CONTACT ICON
 ===================================================== */
 
 .dev-contact__icon {
-    display: grid;
+    display:
+        grid;
 
-    place-items: center;
+    place-items:
+        center;
 
-    width: 36px;
+    width:
+        36px;
 
-    height: 36px;
+    height:
+        36px;
 
-    border-radius: 10px;
+    border-radius:
+        10px;
 
     color:
         var(--dev-green);
 
     background:
-        rgba(132, 220, 158, 0.085);
+        rgba(132, 220, 158, .085);
 }
 
 
 .dev-contact__icon svg {
-    width: 16px;
+    width:
+        16px;
 
-    height: 16px;
+    height:
+        16px;
 
-    fill: none;
+    fill:
+        none;
 
     stroke:
         currentColor;
 
-    stroke-width: 1.8;
+    stroke-width:
+        1.8;
 
-    stroke-linecap: round;
+    stroke-linecap:
+        round;
 
-    stroke-linejoin: round;
+    stroke-linejoin:
+        round;
 }
 
 
 /* =====================================================
-   27. CONTACT TEXT
+   28. CONTACT CONTENT
 ===================================================== */
 
 .dev-contact__content {
-    display: grid;
+    display:
+        grid;
 
-    min-width: 0;
+    min-width:
+        0;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 }
 
 
 .dev-contact__content small {
-    margin-bottom: 2px;
+    margin-bottom:
+        2px;
 
     color:
-        rgba(255, 255, 255, 0.32);
+        rgba(255, 255, 255, .32);
 
-    font-size: 6px;
+    font-size:
+        6px;
 
-    font-weight: 800;
+    font-weight:
+        800;
 
     letter-spacing:
-        0.18em;
+        .18em;
 }
 
 
 /* =====================================================
-   28. CONTACT ARROW
+   29. CONTACT ARROW
 ===================================================== */
 
 .dev-contact__arrow {
-    display: grid;
+    display:
+        grid;
 
-    place-items: center;
+    place-items:
+        center;
 
-    width: 23px;
+    width:
+        23px;
 
-    height: 23px;
+    height:
+        23px;
 
-    border-radius: 7px;
+    border-radius:
+        7px;
 
     color:
         var(--dev-green);
 
     background:
-        rgba(132, 220, 158, 0.055);
+        rgba(132, 220, 158, .055);
 
-    font-size: 11px;
+    font-size:
+        11px;
 
     transition:
-        transform 0.2s ease,
-        background 0.2s ease;
+        transform .2s ease,
+        background .2s ease;
 }
 
 
@@ -1287,77 +1631,93 @@
             -2px);
 
     background:
-        rgba(132, 220, 158, 0.13);
+        rgba(132, 220, 158, .13);
 }
 
 
 /* =====================================================
-   29. FOOTER
+   30. BOTTOM BAR
 ===================================================== */
 
 .dev-signature__footer {
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    justify-content: space-between;
+    justify-content:
+        space-between;
 
-    gap: 10px;
+    gap:
+        10px;
 
     padding:
         9px 15px;
 
     border-top:
-        1px solid rgba(255, 255, 255, 0.055);
+        1px solid rgba(255, 255, 255, .055);
 
     background:
-        rgba(0, 0, 0, 0.09);
+        rgba(0, 0, 0, .09);
 }
 
 
 .dev-signature__status {
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    min-width: 0;
+    min-width:
+        0;
 
-    gap: 7px;
+    gap:
+        7px;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
     color:
-        rgba(255, 255, 255, 0.37);
+        rgba(255, 255, 255, .37);
 
-    font-size: 7px;
+    font-size:
+        7px;
 
-    font-weight: 600;
+    font-weight:
+        600;
 
-    white-space: nowrap;
+    white-space:
+        nowrap;
 
-    text-overflow: ellipsis;
+    text-overflow:
+        ellipsis;
 }
 
 
 /* =====================================================
-   30. STATUS DOT
+   31. STATUS DOT
 ===================================================== */
 
 .dev-status-dot {
     flex:
         0 0 auto;
 
-    width: 6px;
+    width:
+        6px;
 
-    height: 6px;
+    height:
+        6px;
 
-    border-radius: 50%;
+    border-radius:
+        50%;
 
     background:
         var(--dev-green-strong);
 
     box-shadow:
-        0 0 0 3px rgba(80, 201, 120, 0.10);
+        0 0 0 3px rgba(80, 201, 120, .10);
 
     animation:
         devStatusPulse 2s ease infinite;
@@ -1367,23 +1727,23 @@
 @keyframes devStatusPulse {
 
     50% {
-
         box-shadow:
             0 0 0 7px rgba(80, 201, 120, 0);
-
     }
 
 }
 
 
 /* =====================================================
-   31. CODE CURSOR
+   32. CURSOR
 ===================================================== */
 
 .dev-signature__footer-code {
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
     flex:
         0 0 auto;
@@ -1399,18 +1759,23 @@
         Monaco,
         monospace;
 
-    font-size: 10px;
+    font-size:
+        10px;
 }
 
 
 .dev-cursor {
-    display: inline-block;
+    display:
+        inline-block;
 
-    width: 5px;
+    width:
+        5px;
 
-    height: 11px;
+    height:
+        11px;
 
-    margin-left: 3px;
+    margin-left:
+        3px;
 
     background:
         var(--dev-green);
@@ -1423,14 +1788,15 @@
 @keyframes devCursorBlink {
 
     50% {
-        opacity: 0;
+        opacity:
+            0;
     }
 
 }
 
 
 /* =====================================================
-   32. MOBILE
+   33. MOBILE
 ===================================================== */
 
 @media (max-width: 600px) {
@@ -1443,24 +1809,27 @@
         margin:
             18px auto 6px;
 
-        border-radius: 16px;
+        border-radius:
+            16px;
 
         box-shadow:
-            0 14px 35px rgba(0, 0, 0, 0.20);
+            0 14px 35px rgba(0, 0, 0, .20);
     }
 
 
-    /* -----------------------------------------------
+    /* ===============================================
      HEADER
-  ------------------------------------------------ */
+  =============================================== */
 
     .dev-signature__toggle {
         grid-template-columns:
             40px minmax(0, 1fr) 28px;
 
-        gap: 9px;
+        gap:
+            9px;
 
-        min-height: 58px;
+        min-height:
+            58px;
 
         padding:
             8px 10px;
@@ -1468,50 +1837,62 @@
 
 
     .dev-signature__mini-icon {
-        width: 40px;
+        width:
+            40px;
 
-        height: 40px;
+        height:
+            40px;
 
-        border-radius: 11px;
+        border-radius:
+            11px;
 
-        font-size: 11px;
+        font-size:
+            11px;
     }
 
 
     .dev-signature__mini-info small {
-        font-size: 5.5px;
+        font-size:
+            5.5px;
     }
 
 
     .dev-marquee--mini-name .dev-marquee__text {
-        font-size: 12.5px;
+        font-size:
+            12.5px;
     }
 
 
     .dev-signature__mini-title {
-        margin-top: 3px;
+        margin-top:
+            3px;
 
-        font-size: 7px;
+        font-size:
+            7px;
     }
 
 
     .dev-signature__expand {
-        width: 28px;
+        width:
+            28px;
 
-        height: 28px;
+        height:
+            28px;
 
-        border-radius: 8px;
+        border-radius:
+            8px;
     }
 
 
     .dev-signature__expand i {
-        width: 10px;
+        width:
+            10px;
     }
 
 
-    /* -----------------------------------------------
+    /* ===============================================
      TERMINAL
-  ------------------------------------------------ */
+  =============================================== */
 
     .dev-signature__terminal {
         padding:
@@ -1520,53 +1901,75 @@
 
 
     .dev-signature__terminal-head {
-        gap: 6px;
+        gap:
+            6px;
+
+        margin-bottom:
+            7px;
     }
 
 
     .dev-signature__terminal-head small {
-        font-size: 7px;
+        font-size:
+            7px;
     }
 
 
     .dev-terminal-status {
-        font-size: 5.5px;
+        font-size:
+            5.5px;
     }
 
 
     .dev-signature__code {
-        font-size: 9px;
+        font-size:
+            8px;
+
+        line-height:
+            1.55;
     }
 
 
-    /* -----------------------------------------------
+    .dev-code-line {
+        padding-left:
+            12px;
+    }
+
+
+    /* ===============================================
      PROFILE
-  ------------------------------------------------ */
+  =============================================== */
 
     .dev-signature__main {
         grid-template-columns:
             48px minmax(0, 1fr);
 
-        gap: 10px;
+        gap:
+            10px;
 
         padding:
-            16px 12px 12px;
+            15px 12px 11px;
     }
 
 
     .dev-signature__avatar {
-        width: 48px;
+        width:
+            48px;
 
-        height: 48px;
+        height:
+            48px;
 
-        border-radius: 14px;
+        border-radius:
+            14px;
 
-        font-size: 14px;
+        font-size:
+            14px;
     }
 
 
     .dev-signature__eyebrow {
-        font-size: 5.5px;
+        font-size:
+            5.3px;
     }
 
 
@@ -1579,18 +1982,61 @@
 
 
     .dev-signature__identity p {
-        margin-top: 4px;
+        margin-top:
+            4px;
 
-        font-size: 8px;
+        font-size:
+            8px;
     }
 
 
-    /* -----------------------------------------------
+    /* ===============================================
+     HIGHLIGHTS
+  =============================================== */
+
+    .dev-highlights {
+        gap:
+            5px;
+
+        margin-top:
+            3px;
+    }
+
+
+    .dev-highlight {
+        padding:
+            6px 3px;
+
+        border-radius:
+            8px;
+    }
+
+
+    .dev-highlight strong {
+        font-size:
+            7.5px;
+    }
+
+
+    .dev-highlight small {
+        margin-top:
+            2px;
+
+        font-size:
+            4.5px;
+
+        letter-spacing:
+            .05em;
+    }
+
+
+    /* ===============================================
      SKILLS
-  ------------------------------------------------ */
+  =============================================== */
 
     .dev-skills {
-        cursor: default;
+        cursor:
+            default;
     }
 
 
@@ -1598,19 +2044,21 @@
         padding:
             5px 8px;
 
-        font-size: 7.5px;
+        font-size:
+            7.5px;
     }
 
 
-    /* -----------------------------------------------
+    /* ===============================================
      CONTACTS
-  ------------------------------------------------ */
+  =============================================== */
 
     .dev-signature__contact {
         grid-template-columns:
             1fr;
 
-        gap: 6px;
+        gap:
+            6px;
 
         padding:
             0 11px 12px;
@@ -1621,32 +2069,37 @@
         grid-template-columns:
             36px minmax(0, 1fr) 23px;
 
-        gap: 8px;
+        gap:
+            8px;
 
         padding:
             8px 9px;
 
-        border-radius: 12px;
+        border-radius:
+            12px;
     }
 
 
     .dev-contact__icon {
-        width: 36px;
+        width:
+            36px;
 
-        height: 36px;
+        height:
+            36px;
     }
 
 
     .dev-marquee--phone .dev-marquee__text,
 
     .dev-marquee--email .dev-marquee__text {
-        font-size: 9px;
+        font-size:
+            9px;
     }
 
 
-    /* -----------------------------------------------
-     FOOTER
-  ------------------------------------------------ */
+    /* ===============================================
+     BOTTOM
+  =============================================== */
 
     .dev-signature__footer {
         padding:
@@ -1655,19 +2108,21 @@
 
 
     .dev-signature__status {
-        font-size: 6.5px;
+        font-size:
+            6.5px;
     }
 
 
     .dev-signature__footer code {
-        font-size: 9px;
+        font-size:
+            9px;
     }
 
 }
 
 
 /* =====================================================
-   33. VERY SMALL PHONES
+   34. VERY SMALL PHONES
 ===================================================== */
 
 @media (max-width: 360px) {
@@ -1683,9 +2138,11 @@
         grid-template-columns:
             36px minmax(0, 1fr) 26px;
 
-        min-height: 54px;
+        min-height:
+            54px;
 
-        gap: 7px;
+        gap:
+            7px;
 
         padding:
             7px 8px;
@@ -1693,25 +2150,32 @@
 
 
     .dev-signature__mini-icon {
-        width: 36px;
+        width:
+            36px;
 
-        height: 36px;
+        height:
+            36px;
 
-        border-radius: 10px;
+        border-radius:
+            10px;
 
-        font-size: 10px;
+        font-size:
+            10px;
     }
 
 
     .dev-marquee--mini-name .dev-marquee__text {
-        font-size: 11.5px;
+        font-size:
+            11.5px;
     }
 
 
     .dev-signature__expand {
-        width: 26px;
+        width:
+            26px;
 
-        height: 26px;
+        height:
+            26px;
     }
 
 
@@ -1719,30 +2183,48 @@
         grid-template-columns:
             43px minmax(0, 1fr);
 
-        padding-left: 10px;
+        padding-left:
+            10px;
 
-        padding-right: 10px;
+        padding-right:
+            10px;
     }
 
 
     .dev-signature__avatar {
-        width: 43px;
+        width:
+            43px;
 
-        height: 43px;
+        height:
+            43px;
 
-        font-size: 12px;
+        font-size:
+            12px;
     }
 
 
     .dev-marquee--name:not(.dev-marquee--mini-name) .dev-marquee__text {
-        font-size: 14px;
+        font-size:
+            14px;
+    }
+
+
+    .dev-highlight strong {
+        font-size:
+            7px;
+    }
+
+
+    .dev-highlight small {
+        font-size:
+            4px;
     }
 
 }
 
 
 /* =====================================================
-   34. REDUCED MOTION ACCESSIBILITY
+   35. REDUCED MOTION
 ===================================================== */
 
 @media (prefers-reduced-motion: reduce) {
