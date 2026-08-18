@@ -936,6 +936,12 @@ i.arrow-down {
 .menu-search__button-icon {
   font-size: 19px;
   line-height: 1;
+  width: 0;
+  height: 0;
+  border-left: 11px solid var(--white);
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+
 }
 
 

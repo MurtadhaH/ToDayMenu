@@ -21,6 +21,12 @@ header strong#headerPhone {
     padding: 16px 22px 16px 18px;
 }
 
+.menu-search__button-icon {
+    border-right: 11px solid var(--white);
+    border-left: 0;
+}
+
+
 /* Phone */
 @media (max-width: 620px) {
     .drop-shape {
