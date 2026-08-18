@@ -1,0 +1,1773 @@
+/* =====================================================
+   REUSABLE DEVELOPER SIGNATURE
+   File: dev.css
+===================================================== */
+
+
+/* =====================================================
+   1. MAIN COMPONENT
+===================================================== */
+
+.dev-signature {
+    --dev-green: #84dc9e;
+    --dev-green-strong: #50c978;
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    width: min(720px, calc(100% - 24px));
+
+    margin: 28px auto 12px;
+
+    direction: ltr;
+    text-align: left;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(145deg,
+            #07140c 0%,
+            #0a1d11 52%,
+            #0d2818 100%);
+
+    border:
+        1px solid rgba(132, 220, 158, 0.16);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.22),
+
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+.dev-signature *,
+.dev-signature *::before,
+.dev-signature *::after {
+    box-sizing: border-box;
+}
+
+
+.dev-signature a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+.dev-signature button {
+    font: inherit;
+}
+
+
+/* =====================================================
+   2. DECORATIVE BACKGROUND
+===================================================== */
+
+.dev-signature::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -2;
+
+    opacity: 0.11;
+
+    pointer-events: none;
+
+    background-image:
+
+        linear-gradient(rgba(132, 220, 158, 0.12) 1px,
+            transparent 1px),
+
+        linear-gradient(90deg,
+            rgba(132, 220, 158, 0.12) 1px,
+            transparent 1px);
+
+    background-size:
+        27px 27px;
+}
+
+
+.dev-signature__glow {
+    position: absolute;
+
+    z-index: -1;
+
+    top: -150px;
+
+    right: -100px;
+
+    width: 300px;
+
+    height: 300px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(73, 211, 115, 0.17);
+
+    filter:
+        blur(75px);
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   3. PERMANENT HEADER
+===================================================== */
+
+.dev-signature__toggle {
+    position: relative;
+
+    z-index: 5;
+
+    display: grid;
+
+    grid-template-columns:
+        46px minmax(0, 1fr) 32px;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    min-height: 68px;
+
+    margin: 0;
+
+    padding:
+        10px 13px;
+
+    border: 0;
+
+    color: #ffffff;
+
+    background:
+        transparent;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    -webkit-tap-highlight-color:
+        transparent;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.dev-signature__toggle:hover {
+    background:
+        rgba(255, 255, 255, 0.025);
+}
+
+
+.dev-signature.is-expanded .dev-signature__toggle {
+    background:
+        rgba(0, 0, 0, 0.08);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+}
+
+
+.dev-signature__toggle:focus-visible {
+    outline:
+        2px solid var(--dev-green);
+
+    outline-offset:
+        -3px;
+}
+
+
+/* =====================================================
+   4. MINI </> ICON
+===================================================== */
+
+.dev-signature__mini-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 46px;
+
+    height: 46px;
+
+    border-radius: 14px;
+
+    color:
+        var(--dev-green);
+
+    background:
+        rgba(132, 220, 158, 0.085);
+
+    border:
+        1px solid rgba(132, 220, 158, 0.17);
+
+    font-family:
+        Consolas,
+        Monaco,
+        "Courier New",
+        monospace;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+
+        background 0.3s ease,
+
+        border-color 0.3s ease;
+}
+
+
+.dev-signature__mini-icon b {
+    margin:
+        0 1px;
+
+    color:
+        rgba(255, 255, 255, 0.92);
+
+    font-weight: inherit;
+}
+
+
+.dev-signature.is-expanded .dev-signature__mini-icon {
+    transform:
+        rotate(-4deg) scale(1.04);
+
+    background:
+        rgba(132, 220, 158, 0.12);
+
+    border-color:
+        rgba(132, 220, 158, 0.28);
+}
+
+
+/* =====================================================
+   5. MINI DEVELOPER INFORMATION
+===================================================== */
+
+.dev-signature__mini-info {
+    display: grid;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    line-height: 1.15;
+}
+
+
+.dev-signature__mini-info small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    overflow: hidden;
+
+    color:
+        var(--dev-green);
+
+    font-size: 6.5px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+.dev-signature__mini-title {
+    display: block;
+
+    margin-top: 4px;
+
+    overflow: hidden;
+
+    color:
+        rgba(255, 255, 255, 0.43);
+
+    font-size: 8.5px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =====================================================
+   6. + / × BUTTON
+===================================================== */
+
+.dev-signature__expand {
+    position: relative;
+
+    display: grid;
+
+    place-items: center;
+
+    width: 32px;
+
+    height: 32px;
+
+    border:
+        1px solid rgba(132, 220, 158, 0.10);
+
+    border-radius: 10px;
+
+    color:
+        var(--dev-green);
+
+    background:
+        rgba(132, 220, 158, 0.07);
+
+    transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+
+        background 0.25s ease,
+
+        border-color 0.25s ease;
+}
+
+
+.dev-signature__expand i {
+    position: absolute;
+
+    width: 12px;
+
+    height: 2px;
+
+    border-radius: 20px;
+
+    background:
+        currentColor;
+
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* vertical part of + */
+
+.dev-signature__expand i:nth-child(2) {
+    transform:
+        rotate(90deg);
+}
+
+
+/* + becomes × */
+
+.dev-signature.is-expanded .dev-signature__expand {
+    transform:
+        rotate(180deg);
+
+    background:
+        rgba(132, 220, 158, 0.13);
+
+    border-color:
+        rgba(132, 220, 158, 0.20);
+}
+
+
+.dev-signature.is-expanded .dev-signature__expand i:first-child {
+    transform:
+        rotate(45deg);
+}
+
+
+.dev-signature.is-expanded .dev-signature__expand i:nth-child(2) {
+    transform:
+        rotate(-45deg);
+}
+
+
+/* =====================================================
+   7. EXPANDABLE DETAILS
+===================================================== */
+
+.dev-signature__details {
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        max-height 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+
+        opacity 0.30s ease,
+
+        visibility 0.65s;
+}
+
+
+.dev-signature.is-expanded .dev-signature__details {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+.dev-signature__details-inner {
+    width: 100%;
+}
+
+
+/* =====================================================
+   8. TEXT MARQUEE
+===================================================== */
+
+/*
+   IMPORTANT
+
+   Desktop / tablet:
+   text never moves.
+
+   Phone:
+   JavaScript adds .is-overflowing ONLY
+   when the text is wider than its container.
+*/
+
+.dev-marquee {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+}
+
+
+.dev-marquee__text {
+    display: block;
+
+    width: max-content;
+
+    max-width: none;
+
+    white-space: nowrap;
+
+    transform:
+        translateX(0);
+}
+
+
+/* =====================================================
+   9. DESKTOP / TABLET MARQUEE DISABLED
+===================================================== */
+
+@media (min-width: 601px) {
+
+    .dev-marquee__text {
+        animation:
+            none !important;
+
+        transform:
+            translateX(0) !important;
+    }
+
+}
+
+
+/* =====================================================
+   10. MOBILE MARQUEE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .dev-marquee {
+        -webkit-mask-image:
+            linear-gradient(90deg,
+                transparent,
+                #000 4%,
+                #000 96%,
+                transparent);
+
+        mask-image:
+            linear-gradient(90deg,
+                transparent,
+                #000 4%,
+                #000 96%,
+                transparent);
+    }
+
+
+    /*
+     Text fits:
+     no animation.
+  */
+
+    .dev-marquee:not(.is-overflowing) .dev-marquee__text {
+        animation:
+            none;
+
+        transform:
+            translateX(0);
+    }
+
+
+    /*
+     Text does not fit:
+     JS adds .is-overflowing.
+  */
+
+    .dev-marquee.is-overflowing .dev-marquee__text {
+        animation:
+            devMarqueeMove var(--dev-marquee-duration,
+                7s) ease-in-out infinite alternate;
+
+        will-change:
+            transform;
+    }
+
+}
+
+
+/* =====================================================
+   11. MARQUEE MOVEMENT
+===================================================== */
+
+@keyframes devMarqueeMove {
+
+    0%,
+    15% {
+        transform:
+            translateX(0);
+    }
+
+
+    85%,
+    100% {
+        transform:
+            translateX(var(--dev-marquee-distance,
+                    0px));
+    }
+
+}
+
+
+/* =====================================================
+   12. NAME
+===================================================== */
+
+.dev-marquee--name .dev-marquee__text {
+    color:
+        #ffffff;
+
+    font-size:
+        clamp(19px,
+            4vw,
+            26px);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    letter-spacing:
+        -0.03em;
+}
+
+
+.dev-marquee--mini-name .dev-marquee__text {
+    font-size: 14px;
+
+    letter-spacing:
+        -0.01em;
+}
+
+
+/* =====================================================
+   13. PHONE / EMAIL
+===================================================== */
+
+.dev-marquee--phone .dev-marquee__text,
+
+.dev-marquee--email .dev-marquee__text {
+    color:
+        rgba(255, 255, 255, 0.86);
+
+    font-size: 9px;
+
+    font-weight: 650;
+}
+
+
+/* =====================================================
+   14. TERMINAL
+===================================================== */
+
+.dev-signature__terminal {
+    padding:
+        12px 17px 11px;
+
+    background:
+        rgba(0, 0, 0, 0.14);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+}
+
+
+.dev-signature__terminal-head {
+    display: flex;
+
+    align-items: center;
+
+    min-width: 0;
+
+    gap: 9px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   15. TERMINAL DOTS
+===================================================== */
+
+.dev-terminal-dots {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    flex:
+        0 0 auto;
+}
+
+
+.dev-terminal-dots span {
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+}
+
+
+.dev-terminal-dots span:nth-child(1) {
+    background:
+        #ff6259;
+}
+
+
+.dev-terminal-dots span:nth-child(2) {
+    background:
+        #ffbd45;
+}
+
+
+.dev-terminal-dots span:nth-child(3) {
+    background:
+        #27c93f;
+}
+
+
+/* =====================================================
+   16. TERMINAL FILE NAME
+===================================================== */
+
+.dev-signature__terminal-head small {
+    min-width: 0;
+
+    overflow: hidden;
+
+    color:
+        rgba(255, 255, 255, 0.38);
+
+    font-family:
+        Consolas,
+        Monaco,
+        "Courier New",
+        monospace;
+
+    font-size: 8px;
+
+    letter-spacing:
+        0.08em;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =====================================================
+   17. ONLINE STATUS
+===================================================== */
+
+.dev-terminal-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    flex:
+        0 0 auto;
+
+    margin-left: auto;
+
+    color:
+        rgba(132, 220, 158, 0.72);
+
+    font-family:
+        Consolas,
+        monospace;
+
+    font-size: 6px;
+
+    letter-spacing:
+        0.12em;
+}
+
+
+.dev-terminal-status i {
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background:
+        var(--dev-green-strong);
+
+    box-shadow:
+        0 0 7px rgba(80, 201, 120, 0.70);
+}
+
+
+/* =====================================================
+   18. TERMINAL CODE LINE
+===================================================== */
+
+.dev-signature__code {
+    overflow: hidden;
+
+    color:
+        rgba(255, 255, 255, 0.60);
+
+    font-family:
+        Consolas,
+        Monaco,
+        "Courier New",
+        monospace;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+}
+
+
+.dev-code-key {
+    color:
+        #c792ea;
+}
+
+
+.dev-code-name {
+    color:
+        #82aaff;
+}
+
+
+.dev-code-symbol {
+    color:
+        #89ddff;
+}
+
+
+/* =====================================================
+   19. MAIN PROFILE
+===================================================== */
+
+.dev-signature__main {
+    display: grid;
+
+    grid-template-columns:
+        64px minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding:
+        22px 21px 16px;
+}
+
+
+/* =====================================================
+   20. LARGE CODE ICON
+===================================================== */
+
+.dev-signature__avatar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 64px;
+
+    height: 64px;
+
+    border:
+        1px solid rgba(132, 220, 158, 0.19);
+
+    border-radius: 18px;
+
+    color:
+        var(--dev-green);
+
+    background:
+        linear-gradient(145deg,
+            rgba(132, 220, 158, 0.12),
+            rgba(132, 220, 158, 0.025));
+
+    font-family:
+        Consolas,
+        Monaco,
+        monospace;
+
+    font-size: 18px;
+
+    font-weight: 900;
+}
+
+
+.dev-signature__avatar b {
+    margin:
+        0 1px;
+
+    color:
+        rgba(255, 255, 255, 0.92);
+}
+
+
+/* =====================================================
+   21. PROFILE INFORMATION
+===================================================== */
+
+.dev-signature__identity {
+    min-width: 0;
+
+    overflow: hidden;
+}
+
+
+.dev-signature__eyebrow {
+    display: block;
+
+    margin-bottom: 4px;
+
+    overflow: hidden;
+
+    color:
+        var(--dev-green);
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+    letter-spacing:
+        0.17em;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+.dev-signature__name-line {
+    min-width: 0;
+
+    overflow: hidden;
+}
+
+
+.dev-signature__identity p {
+    margin:
+        6px 0 0;
+
+    overflow: hidden;
+
+    color:
+        rgba(255, 255, 255, 0.52);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+.dev-signature__identity p span {
+    margin:
+        0 5px;
+
+    color:
+        var(--dev-green);
+}
+
+
+/* =====================================================
+   22. SKILLS SCROLLER
+===================================================== */
+
+.dev-skills {
+    position: relative;
+
+    grid-column:
+        1 / -1;
+
+    width: 100%;
+
+    min-width: 0;
+
+    margin-top: 4px;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+
+    overscroll-behavior-x:
+        contain;
+
+    -webkit-overflow-scrolling:
+        touch;
+
+    touch-action:
+        pan-x pan-y;
+
+    cursor:
+        grab;
+
+    user-select:
+        none;
+
+    -webkit-user-select:
+        none;
+
+    -webkit-mask-image:
+        linear-gradient(90deg,
+            transparent,
+            #000 3%,
+            #000 97%,
+            transparent);
+
+    mask-image:
+        linear-gradient(90deg,
+            transparent,
+            #000 3%,
+            #000 97%,
+            transparent);
+}
+
+
+.dev-skills::-webkit-scrollbar {
+    display: none;
+}
+
+
+.dev-skills.is-dragging {
+    cursor:
+        grabbing;
+}
+
+
+/* =====================================================
+   23. SKILLS TRACK
+===================================================== */
+
+.dev-skills__track {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    width: max-content;
+
+    min-width: max-content;
+
+    padding:
+        3px 2px 6px;
+}
+
+
+/* =====================================================
+   24. SKILL ITEM
+===================================================== */
+
+.dev-skill {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    flex:
+        0 0 auto;
+
+    padding:
+        5px 9px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.065);
+
+    border-radius: 8px;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    background:
+        rgba(255, 255, 255, 0.04);
+
+    font-family:
+        Consolas,
+        Monaco,
+        monospace;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.dev-skill i {
+    color:
+        rgba(132, 220, 158, 0.46);
+
+    font-size: 6px;
+
+    font-style: normal;
+}
+
+
+.dev-skill:hover {
+    transform:
+        translateY(-2px);
+
+    color:
+        var(--dev-green);
+
+    border-color:
+        rgba(132, 220, 158, 0.22);
+
+    background:
+        rgba(132, 220, 158, 0.07);
+}
+
+
+/* =====================================================
+   25. CONTACTS
+===================================================== */
+
+.dev-signature__contact {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,
+            minmax(0, 1fr));
+
+    gap: 8px;
+
+    padding:
+        0 21px 19px;
+}
+
+
+.dev-contact {
+    display: grid;
+
+    grid-template-columns:
+        36px minmax(0, 1fr) 23px;
+
+    align-items: center;
+
+    gap: 9px;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    padding:
+        9px 10px;
+
+    color:
+        #ffffff;
+
+    background:
+        rgba(255, 255, 255, 0.037);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.065);
+
+    border-radius: 13px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.dev-contact:hover {
+    transform:
+        translateY(-2px);
+
+    background:
+        rgba(132, 220, 158, 0.065);
+
+    border-color:
+        rgba(132, 220, 158, 0.25);
+}
+
+
+/* =====================================================
+   26. CONTACT ICON
+===================================================== */
+
+.dev-contact__icon {
+    display: grid;
+
+    place-items: center;
+
+    width: 36px;
+
+    height: 36px;
+
+    border-radius: 10px;
+
+    color:
+        var(--dev-green);
+
+    background:
+        rgba(132, 220, 158, 0.085);
+}
+
+
+.dev-contact__icon svg {
+    width: 16px;
+
+    height: 16px;
+
+    fill: none;
+
+    stroke:
+        currentColor;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+/* =====================================================
+   27. CONTACT TEXT
+===================================================== */
+
+.dev-contact__content {
+    display: grid;
+
+    min-width: 0;
+
+    overflow: hidden;
+}
+
+
+.dev-contact__content small {
+    margin-bottom: 2px;
+
+    color:
+        rgba(255, 255, 255, 0.32);
+
+    font-size: 6px;
+
+    font-weight: 800;
+
+    letter-spacing:
+        0.18em;
+}
+
+
+/* =====================================================
+   28. CONTACT ARROW
+===================================================== */
+
+.dev-contact__arrow {
+    display: grid;
+
+    place-items: center;
+
+    width: 23px;
+
+    height: 23px;
+
+    border-radius: 7px;
+
+    color:
+        var(--dev-green);
+
+    background:
+        rgba(132, 220, 158, 0.055);
+
+    font-size: 11px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.dev-contact:hover .dev-contact__arrow {
+    transform:
+        translate(2px,
+            -2px);
+
+    background:
+        rgba(132, 220, 158, 0.13);
+}
+
+
+/* =====================================================
+   29. FOOTER
+===================================================== */
+
+.dev-signature__footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding:
+        9px 15px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.055);
+
+    background:
+        rgba(0, 0, 0, 0.09);
+}
+
+
+.dev-signature__status {
+    display: flex;
+
+    align-items: center;
+
+    min-width: 0;
+
+    gap: 7px;
+
+    overflow: hidden;
+
+    color:
+        rgba(255, 255, 255, 0.37);
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =====================================================
+   30. STATUS DOT
+===================================================== */
+
+.dev-status-dot {
+    flex:
+        0 0 auto;
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background:
+        var(--dev-green-strong);
+
+    box-shadow:
+        0 0 0 3px rgba(80, 201, 120, 0.10);
+
+    animation:
+        devStatusPulse 2s ease infinite;
+}
+
+
+@keyframes devStatusPulse {
+
+    50% {
+
+        box-shadow:
+            0 0 0 7px rgba(80, 201, 120, 0);
+
+    }
+
+}
+
+
+/* =====================================================
+   31. CODE CURSOR
+===================================================== */
+
+.dev-signature__footer-code {
+    display: flex;
+
+    align-items: center;
+
+    flex:
+        0 0 auto;
+}
+
+
+.dev-signature__footer code {
+    color:
+        var(--dev-green);
+
+    font-family:
+        Consolas,
+        Monaco,
+        monospace;
+
+    font-size: 10px;
+}
+
+
+.dev-cursor {
+    display: inline-block;
+
+    width: 5px;
+
+    height: 11px;
+
+    margin-left: 3px;
+
+    background:
+        var(--dev-green);
+
+    animation:
+        devCursorBlink 1s step-end infinite;
+}
+
+
+@keyframes devCursorBlink {
+
+    50% {
+        opacity: 0;
+    }
+
+}
+
+
+/* =====================================================
+   32. MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+
+    .dev-signature {
+        width:
+            calc(100% - 20px);
+
+        margin:
+            18px auto 6px;
+
+        border-radius: 16px;
+
+        box-shadow:
+            0 14px 35px rgba(0, 0, 0, 0.20);
+    }
+
+
+    /* -----------------------------------------------
+     HEADER
+  ------------------------------------------------ */
+
+    .dev-signature__toggle {
+        grid-template-columns:
+            40px minmax(0, 1fr) 28px;
+
+        gap: 9px;
+
+        min-height: 58px;
+
+        padding:
+            8px 10px;
+    }
+
+
+    .dev-signature__mini-icon {
+        width: 40px;
+
+        height: 40px;
+
+        border-radius: 11px;
+
+        font-size: 11px;
+    }
+
+
+    .dev-signature__mini-info small {
+        font-size: 5.5px;
+    }
+
+
+    .dev-marquee--mini-name .dev-marquee__text {
+        font-size: 12.5px;
+    }
+
+
+    .dev-signature__mini-title {
+        margin-top: 3px;
+
+        font-size: 7px;
+    }
+
+
+    .dev-signature__expand {
+        width: 28px;
+
+        height: 28px;
+
+        border-radius: 8px;
+    }
+
+
+    .dev-signature__expand i {
+        width: 10px;
+    }
+
+
+    /* -----------------------------------------------
+     TERMINAL
+  ------------------------------------------------ */
+
+    .dev-signature__terminal {
+        padding:
+            10px 12px;
+    }
+
+
+    .dev-signature__terminal-head {
+        gap: 6px;
+    }
+
+
+    .dev-signature__terminal-head small {
+        font-size: 7px;
+    }
+
+
+    .dev-terminal-status {
+        font-size: 5.5px;
+    }
+
+
+    .dev-signature__code {
+        font-size: 9px;
+    }
+
+
+    /* -----------------------------------------------
+     PROFILE
+  ------------------------------------------------ */
+
+    .dev-signature__main {
+        grid-template-columns:
+            48px minmax(0, 1fr);
+
+        gap: 10px;
+
+        padding:
+            16px 12px 12px;
+    }
+
+
+    .dev-signature__avatar {
+        width: 48px;
+
+        height: 48px;
+
+        border-radius: 14px;
+
+        font-size: 14px;
+    }
+
+
+    .dev-signature__eyebrow {
+        font-size: 5.5px;
+    }
+
+
+    .dev-marquee--name:not(.dev-marquee--mini-name) .dev-marquee__text {
+        font-size:
+            clamp(15px,
+                4.8vw,
+                19px);
+    }
+
+
+    .dev-signature__identity p {
+        margin-top: 4px;
+
+        font-size: 8px;
+    }
+
+
+    /* -----------------------------------------------
+     SKILLS
+  ------------------------------------------------ */
+
+    .dev-skills {
+        cursor: default;
+    }
+
+
+    .dev-skill {
+        padding:
+            5px 8px;
+
+        font-size: 7.5px;
+    }
+
+
+    /* -----------------------------------------------
+     CONTACTS
+  ------------------------------------------------ */
+
+    .dev-signature__contact {
+        grid-template-columns:
+            1fr;
+
+        gap: 6px;
+
+        padding:
+            0 11px 12px;
+    }
+
+
+    .dev-contact {
+        grid-template-columns:
+            36px minmax(0, 1fr) 23px;
+
+        gap: 8px;
+
+        padding:
+            8px 9px;
+
+        border-radius: 12px;
+    }
+
+
+    .dev-contact__icon {
+        width: 36px;
+
+        height: 36px;
+    }
+
+
+    .dev-marquee--phone .dev-marquee__text,
+
+    .dev-marquee--email .dev-marquee__text {
+        font-size: 9px;
+    }
+
+
+    /* -----------------------------------------------
+     FOOTER
+  ------------------------------------------------ */
+
+    .dev-signature__footer {
+        padding:
+            8px 11px;
+    }
+
+
+    .dev-signature__status {
+        font-size: 6.5px;
+    }
+
+
+    .dev-signature__footer code {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =====================================================
+   33. VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 360px) {
+
+
+    .dev-signature {
+        width:
+            calc(100% - 14px);
+    }
+
+
+    .dev-signature__toggle {
+        grid-template-columns:
+            36px minmax(0, 1fr) 26px;
+
+        min-height: 54px;
+
+        gap: 7px;
+
+        padding:
+            7px 8px;
+    }
+
+
+    .dev-signature__mini-icon {
+        width: 36px;
+
+        height: 36px;
+
+        border-radius: 10px;
+
+        font-size: 10px;
+    }
+
+
+    .dev-marquee--mini-name .dev-marquee__text {
+        font-size: 11.5px;
+    }
+
+
+    .dev-signature__expand {
+        width: 26px;
+
+        height: 26px;
+    }
+
+
+    .dev-signature__main {
+        grid-template-columns:
+            43px minmax(0, 1fr);
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+    }
+
+
+    .dev-signature__avatar {
+        width: 43px;
+
+        height: 43px;
+
+        font-size: 12px;
+    }
+
+
+    .dev-marquee--name:not(.dev-marquee--mini-name) .dev-marquee__text {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =====================================================
+   34. REDUCED MOTION ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+
+    .dev-marquee__text {
+        animation:
+            none !important;
+
+        transform:
+            translateX(0) !important;
+    }
+
+
+    .dev-cursor,
+    .dev-status-dot {
+        animation:
+            none !important;
+    }
+
+
+    .dev-marquee {
+        -webkit-mask-image:
+            none;
+
+        mask-image:
+            none;
+    }
+
+}
