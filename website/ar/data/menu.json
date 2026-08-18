@@ -18,17 +18,20 @@
           "id": "special-breakfast-today",
           "special": true,
           "name": "سيت فطور تودي",
-          "price": "15000",
-          "image": "../assets/menu-images/makhlama-iraqi-meat.jpeg",
+          "price": "12000",
+          "image": "../assets/menu-images/special-breakfast-today.jpeg",
           "description": "",
           "ingredients": [
-            "لحم عراقي",
-            "طماطة",
-            "بطاطا",
-            "بيض",
-            "طرشي",
-            "فنكر",
+            "بيض قلي",
+            "طماطة قلي",
+            "جبن كيري عدد 3",
+            "قشطة",
+            "لبنة",
+            "شوربة",
+            "حمص",
             "سلطة",
+            "مربى",
+            "زيتون",
             "صمون"
           ]
         },
@@ -693,7 +696,13 @@
           "price": "5000",
           "image": "../assets/menu-images/today-finger.jpeg",
           "description": "",
-          "ingredients": []
+          "ingredients": [
+            "فنكر",
+            "ستربس",
+            "صوص",
+            "جبن",
+            "باربكيو"
+          ]
         },
         {
           "id": "cheese-bbq-finger",
@@ -716,7 +725,7 @@
     {
       "id": "rizo",
       "name": "الريزو",
-      "icon": "🍚",
+      "icon": "../assets/menu-images/appetizers.jpeg",
       "items": [
         {
           "id": "classic-rizo",
@@ -733,7 +742,7 @@
         {
           "id": "cheese-rizo",
           "name": "ريزو بالجبن",
-          "price": "6500",
+          "price": "6000",
           "image": "../assets/menu-images/cheese-rizo.jpeg",
           "description": "",
           "ingredients": [
@@ -746,7 +755,7 @@
         {
           "id": "cheese-bbq-rizo",
           "name": "ريزو جبن وباربكيو",
-          "price": "7000",
+          "price": "6000",
           "image": "../assets/menu-images/cheese-bbq-rizo.jpeg",
           "description": "",
           "ingredients": [
@@ -780,6 +789,18 @@
             "شاورما دجاج",
             "صوص"
           ]
+        },
+        {
+          "id": "herbs-rizo",
+          "name": "ريزو اعشاب",
+          "price": "5500",
+          "image": "../assets/menu-images/herbs-rizo.jpeg",
+          "description": "",
+          "ingredients": [
+            "تمن",
+            "صوص",
+            "خضروات"
+          ]
         }
       ]
     },
@@ -794,7 +815,12 @@
           "price": "1000",
           "image": "../assets/menu-images/mixed-falafel.jpeg",
           "description": "",
-          "ingredients": []
+          "ingredients": [
+            "فلافل",
+            "بطاطا",
+            "خضروات",
+            "صوص"
+          ]
         },
         {
           "id": "falafel-pieces",
@@ -802,7 +828,9 @@
           "price": "1000",
           "image": "../assets/menu-images/falafel-pieces.jpeg",
           "description": "",
-          "ingredients": []
+          "ingredients": [
+            "7 حبات فلافل"
+          ]
         },
         {
           "id": "saj-falafel",
@@ -810,7 +838,13 @@
           "price": "2000",
           "image": "../assets/menu-images/saj-falafel.jpeg",
           "description": "",
-          "ingredients": []
+          "ingredients": [
+            "فلافل",
+            "طرشي",
+            "خس",
+            "صوص",
+            "خبز لبناني"
+          ]
         },
         {
           "id": "falafel-plate",
@@ -818,7 +852,15 @@
           "price": "3000",
           "image": "../assets/menu-images/falafel-plate.jpeg",
           "description": "",
-          "ingredients": []
+          "ingredients": [
+            "11 حبة فلافل",
+            "بطاطا عراقية ",
+            "باذنجان",
+            "سلطة",
+            "عمبة",
+            "صاص",
+            "صمون عدد 3"
+          ]
         },
         {
           "id": "lebanese-falafel",
@@ -826,7 +868,12 @@
           "price": "1000",
           "image": "../assets/menu-images/lebanese-falafel.jpeg",
           "description": "",
-          "ingredients": []
+          "ingredients": [
+            "فلافل",
+            "طرشي",
+            "خس",
+            "صوص"
+          ]
         }
       ]
     },
@@ -845,7 +892,7 @@
           "id": "small-appetizer-plate",
           "name": "طبق صغير",
           "price": "2500",
-          "image": "../assets/menu-images/small-appetizer-plate.jpeg",
+          "image": "../assets/menu-images/appetizer-plate.jpeg",
           "description": "",
           "ingredients": []
         },
@@ -853,7 +900,7 @@
           "id": "medium-appetizer-plate",
           "name": "طبق وسط",
           "price": "3500",
-          "image": "../assets/menu-images/medium-appetizer-plate.jpeg",
+          "image": "../assets/menu-images/appetizer-plate.jpeg",
           "description": "",
           "ingredients": []
         },
@@ -861,9 +908,318 @@
           "id": "large-appetizer-plate",
           "name": "طبق كبير",
           "price": "5000",
-          "image": "../assets/menu-images/large-appetizer-plate.jpeg",
+          "image": "../assets/menu-images/appetizer-plate.jpeg",
           "description": "",
           "ingredients": []
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "البيتـزا",
+      "icon": "../assets/menu-images/pizza.jpeg",
+      "items": [
+        {
+          "id": "meat-shawarma-pizza",
+          "name": "بيتزا شاورما لحم",
+          "price": "7000 - 11000",
+          "image": "../assets/menu-images/meat-shawarma-pizza.jpeg",
+          "description": "كبير (11000)، وسط (9000)، صغير (7000)",
+          "ingredients": [
+            "لحم",
+            "جبن",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "chicken-shawarma-pizza",
+          "name": "بيتزا شاورما دجاج",
+          "price": "6000 - 10000",
+          "image": "../assets/menu-images/chicken-shawarma-pizza.jpeg",
+          "description": "كبير (10000)، وسط (8000)، صغير (6000)",
+          "ingredients": [
+            "دجاج",
+            "جبن",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "four-seasons-pizza",
+          "name": "بيتزا الفصول الاربعة",
+          "price": "7000 - 11000",
+          "image": "../assets/menu-images/four-seasons-pizza.jpeg",
+          "description": "كبير (11000)، وسط (9000)، صغير (7000)",
+          "ingredients": [
+            "لحم",
+            "دجاج",
+            "صوصج",
+            "خضار",
+            "جبن",
+            "صوص"
+          ]
+        },
+        {
+          "id": "half-half-pizza",
+          "name": "بيتزا نصفين",
+          "price": "7000 - 11000",
+          "image": "../assets/menu-images/half-half-pizza.jpeg",
+          "description": "كبير (11000)، وسط (9000)، صغير (7000)",
+          "ingredients": [
+            "لحم",
+            "دجاج",
+            "جبن",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "vegetable-pizza",
+          "name": "بيتزا خضار",
+          "price": "5000 - 9000",
+          "image": "../assets/menu-images/vegetable-pizza.jpeg",
+          "description": "كبير (9000)، وسط (7000)، صغير (5000)",
+          "ingredients": [
+            "جبن",
+            "فطر",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "saj-italian-meat",
+          "name": "صاج ايطالي لحم",
+          "price": "6000",
+          "image": "../assets/menu-images/saj-italian.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "جبن",
+            "صوص",
+            "فنكر"
+          ]
+        },
+        {
+          "id": "saj-italian-chicken",
+          "name": "صاج ايطالي دجاج",
+          "price": "3500",
+          "image": "../assets/menu-images/saj-italian.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "جبن",
+            "طرشي",
+            "طماطة",
+            "صوص"
+          ]
+        },
+        {
+          "id": "calzone-meat",
+          "name": "كلزونيا لحم",
+          "price": "6000",
+          "image": "../assets/menu-images/calzone.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "جبن",
+            "صوص",
+            "خضار",
+            "فنكر"
+          ]
+        },
+        {
+          "id": "calzone-chicken",
+          "name": "كلزونيا دجاج",
+          "price": "4000",
+          "image": "../assets/menu-images/calzone.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "جبن",
+            "صوص",
+            "خضار",
+            "فنكر"
+          ]
+        },
+        {
+          "id": "meat-cheese-manakish",
+          "name": "منقوشة لحم بالجبن",
+          "price": "3000",
+          "image": "../assets/menu-images/manakish.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "جبن",
+            "زعتر"
+          ]
+        },
+        {
+          "id": "chicken-cheese-manakish",
+          "name": "منقوشة دجاج بالجبن",
+          "price": "3000",
+          "image": "../assets/menu-images/manakish.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "جبن",
+            "زعتر"
+          ]
+        },
+        {
+          "id": "cheese-zaatar-manakish",
+          "name": "منقوشة جبن وزعتر",
+          "price": "3000",
+          "image": "../assets/menu-images/manakish.jpeg",
+          "description": "",
+          "ingredients": [
+            "جبن",
+            "زعتر"
+          ]
+        },
+        {
+          "id": "meat-pie",
+          "name": "فطيرة لحم",
+          "price": "2000",
+          "image": "../assets/menu-images/meat-pie.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "جبن",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "chicken-pie",
+          "name": "فطيرة دجاج",
+          "price": "2000",
+          "image": "../assets/menu-images/chicken-pie.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "جبن",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "vegetable-pie",
+          "name": "فطيرة خضار",
+          "price": "2000",
+          "image": "../assets/menu-images/vegetable-pie.jpeg",
+          "description": "",
+          "ingredients": [
+            "جبن",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "sausage-pie",
+          "name": "فطيرة الصوصج",
+          "price": "2000",
+          "image": "../assets/menu-images/sausage-pie.jpeg",
+          "description": "",
+          "ingredients": [
+            "صوصج",
+            "جبن",
+            "خضار",
+            "صوص"
+          ]
+        },
+        {
+          "id": "cheese-pie",
+          "name": "فطيرة جبن",
+          "price": "2000",
+          "image": "../assets/menu-images/cheese-pie.jpeg",
+          "description": "",
+          "ingredients": [
+            "جبن فقط"
+          ]
+        },
+        {
+          "id": "custom-pie",
+          "name": "فطيرة اختيارية",
+          "price": "3000",
+          "image": "../assets/menu-images/custom-pie.jpeg",
+          "description": "",
+          "ingredients": [
+            "حسب طلب الزبون"
+          ]
+        },
+        {
+          "id": "regular-lahm-bajeen",
+          "name": "لحم بعجين عادي",
+          "price": "2000 - 3000",
+          "image": "../assets/menu-images/lahm-bajeen.jpeg",
+          "description": "صغير (2000)، صغير بالجبن (2500)، صغير بالبيض (2500)، صغير جبن وبيض (3000)",
+          "ingredients": []
+        },
+        {
+          "id": "double-lahm-bajeen",
+          "name": "لحم بعجين دبل",
+          "price": "4000 - 6000",
+          "image": "../assets/menu-images/lahm-bajeen.jpeg",
+          "description": "دبل (4000)، دبل بالجبن (5000)، دبل بالبيض (5000)، دبل جبن وبيض (6000)",
+          "ingredients": []
+        },
+        {
+          "id": "zinger-sandwich",
+          "name": "سندويج زنكر",
+          "price": "3500",
+          "image": "../assets/menu-images/zinger-sandwich.jpeg",
+          "description": "",
+          "ingredients": [
+            "قطع دجاج مقرمش",
+            "فنكر",
+            "خس",
+            "جبن"
+          ]
+        },
+        {
+          "id": "zinger-plate",
+          "name": "طبق زنكر",
+          "price": "6000",
+          "image": "../assets/menu-images/zinger-plate.jpeg",
+          "description": "",
+          "ingredients": [
+            "قطع دجاج مقرمش",
+            "فنكر",
+            "خس",
+            "جبن",
+            "صوص",
+            "صمون"
+          ]
+        },
+        {
+          "id": "large-zinger-plate",
+          "name": "طبق زنكر كبير",
+          "price": "9000",
+          "image": "../assets/menu-images/zinger-plate.jpeg",
+          "description": "",
+          "ingredients": [
+            "قطع دجاج مقرمش",
+            "فنكر",
+            "خس",
+            "جبن",
+            "صوص",
+            "صمون"
+          ]
+        },
+        {
+          "id": "chicken-fajita",
+          "name": "فاهيتا دجاج",
+          "price": "3500",
+          "image": "../assets/menu-images/chicken-fajita.jpeg",
+          "description": "",
+          "ingredients": [
+            "دجاج",
+            "جبن",
+            "فنكر",
+            "خضار",
+            "صوص"
+          ]
         }
       ]
     }
