@@ -380,6 +380,9 @@
 
     transition:
         transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+
+    transform: rotate(45deg) translate(-45%, 0px);
+    top: 60%;
 }
 
 
@@ -388,6 +391,7 @@
 .dev-signature__expand i:nth-child(2) {
     transform:
         rotate(90deg);
+    transform: rotate(-45deg) translate(45%, 0px);
 }
 
 
@@ -406,14 +410,12 @@
 
 
 .dev-signature.is-expanded .dev-signature__expand i:first-child {
-    transform:
-        rotate(45deg);
+    transform: rotate(-45deg) translate(45%, 0px);
 }
 
 
 .dev-signature.is-expanded .dev-signature__expand i:nth-child(2) {
-    transform:
-        rotate(-45deg);
+    transform: rotate(45deg) translate(-45%, 0px);
 }
 
 
