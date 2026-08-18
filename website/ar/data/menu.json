@@ -890,7 +890,7 @@
       "items": [
         {
           "id": "small-appetizer-plate",
-          "name": "طبق صغير",
+          "name": "طبق مقبلات صغير",
           "price": "2500",
           "image": "../assets/menu-images/appetizer-plate.jpeg",
           "description": "",
@@ -898,7 +898,7 @@
         },
         {
           "id": "medium-appetizer-plate",
-          "name": "طبق وسط",
+          "name": "طبق مقبلات وسط",
           "price": "3500",
           "image": "../assets/menu-images/appetizer-plate.jpeg",
           "description": "",
@@ -906,7 +906,7 @@
         },
         {
           "id": "large-appetizer-plate",
-          "name": "طبق كبير",
+          "name": "طبق مقبلات كبير",
           "price": "5000",
           "image": "../assets/menu-images/appetizer-plate.jpeg",
           "description": "",

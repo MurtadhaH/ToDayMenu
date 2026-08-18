@@ -88,6 +88,35 @@
 
       <nav class="categories" id="categories" aria-label="Menu categories"></nav>
 
+      <!-- Search -->
+      <div class="menu-search">
+
+        <div class="menu-search__field">
+
+          <span class="menu-search__search-icon" aria-hidden="true">
+            ⌕
+          </span>
+
+          <input type="search" id="searchInput" class="menu-search__input" placeholder="Search for an item..."
+            aria-label="Search for an item" aria-autocomplete="list" aria-controls="searchSuggestions"
+            autocomplete="off">
+
+          <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Search results"></div>
+
+        </div>
+
+
+        <button type="button" id="searchButton" class="menu-search__button">
+          <span>بحث</span>
+
+          <span class="menu-search__button-icon" aria-hidden="true">
+            ←
+          </span>
+        </button>
+
+      </div>
+
+
       <div class="category-header">
         <div>
           <span class="category-header__icon" id="categoryIcon">🍔</span>

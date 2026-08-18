@@ -89,6 +89,34 @@
 
       <nav class="categories" id="categories" aria-label="فئات القائمة"></nav>
 
+      <!-- Search -->
+      <div class="menu-search">
+
+        <div class="menu-search__field">
+
+          <span class="menu-search__search-icon" aria-hidden="true">
+            ⌕
+          </span>
+
+          <input type="search" id="searchInput" class="menu-search__input" placeholder="ابحث عن وجبة..."
+            aria-label="البحث عن وجبة" aria-autocomplete="list" aria-controls="searchSuggestions" autocomplete="off">
+
+          <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="نتائج البحث"></div>
+
+        </div>
+
+
+        <button type="button" id="searchButton" class="menu-search__button">
+          <span>بحث</span>
+
+          <span class="menu-search__button-icon" aria-hidden="true">
+            ←
+          </span>
+        </button>
+
+      </div>
+
+
       <div class="category-header">
         <div>
           <span class="category-header__icon" id="categoryIcon">🍔</span>
