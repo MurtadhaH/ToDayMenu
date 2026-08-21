@@ -135,7 +135,7 @@ header .header-action--primary img {
   color: rgba(255, 255, 255, .78);
   font-size: 25px;
   font-weight: 800;
-  letter-spacing: .42em;
+  /* letter-spacing: .42em; problem with ipone */
   opacity: 0;
   transform: translateY(12px);
   animation: textReveal .8s ease 1.5s forwards;
@@ -240,6 +240,7 @@ header .header-action--primary img {
 
 .brand span {
   display: grid;
+  margin-right: 10px;
   line-height: 1.15;
 }
 
@@ -255,8 +256,9 @@ header strong#headerPhone::before {
 }
 
 .brand strong {
-  font-size: 20px;
+  font-size: 25px;
   white-space: nowrap;
+  font-family: myMoh;
 }
 
 .brand small {
@@ -265,7 +267,7 @@ header strong#headerPhone::before {
   color: rgba(255, 255, 255, .68);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: .11em;
+  /* letter-spacing: .11em; */
   text-transform: uppercase;
 }
 
@@ -315,7 +317,7 @@ header strong#headerPhone::before {
 .header-action--lang .header-action__icon {
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0;
+  /* letter-spacing: 0; */
 }
 
 .header-action span:last-child {
@@ -327,7 +329,7 @@ header strong#headerPhone::before {
   color: rgba(255, 255, 255, .66);
   font-size: 9px;
   font-weight: 800;
-  letter-spacing: .08em;
+  /* letter-spacing: .08em; */
   text-transform: uppercase;
 }
 
@@ -520,7 +522,7 @@ header strong#headerPhone::before {
   color: #eaf5ed;
   font-size: 20px;
   font-weight: 900;
-  letter-spacing: .24em;
+  /* letter-spacing: .24em; */
 }
 
 .hero h1 {
@@ -530,7 +532,7 @@ header strong#headerPhone::before {
   font-size: clamp(52px, 8.2vw, 104px);
   font-weight: 500;
   line-height: .88;
-  letter-spacing: -.055em;
+  /* letter-spacing: -.055em; */
   text-wrap: balance;
 }
 
@@ -606,7 +608,7 @@ i.arrow-down {
   font-size: clamp(38px, 5vw, 60px);
   font-weight: 500;
   line-height: 1;
-  letter-spacing: -.04em;
+  /* letter-spacing: -.04em; */
 }
 
 .section-heading>p {
@@ -619,10 +621,11 @@ i.arrow-down {
 }
 
 .categories {
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-rows: repeat(2, auto); */
+  /* grid-auto-flow: column; */
+  /* grid-auto-columns: max-content; */
 
   gap: 10px;
   margin: 0 -4px 38px;
@@ -715,7 +718,7 @@ i.arrow-down {
   color: var(--muted);
   font-size: 10px;
   font-weight: 900;
-  letter-spacing: .12em;
+  /* letter-spacing: .12em; */
   text-transform: uppercase;
 }
 
@@ -1485,6 +1488,34 @@ i.arrow-down {
   padding: 20px 20px 22px;
 }
 
+.menu-card__days {
+  display: flex;
+  gap: 5px;
+  color: #fff;
+  text-align: left;
+  background: #4CAF50;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: fit-content;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 15px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.menu-card__days .days {
+  display: flex;
+  font-size: 16px;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
 .menu-card__top {
   display: flex;
   align-items: start;
@@ -1554,7 +1585,7 @@ i.arrow-down {
   font-size: clamp(34px, 5vw, 58px);
   font-weight: 500;
   line-height: 1;
-  letter-spacing: -.04em;
+  /* letter-spacing: -.04em; */
 }
 
 .visit-card span {
@@ -1562,7 +1593,13 @@ i.arrow-down {
   line-height: 1.6;
 }
 
-.visit-card>a {
+.visit-card .visit-card-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.visit-card .visit-card-buttons>a {
   flex: 0 0 auto;
   padding: 16px 22px;
   border-radius: 999px;
@@ -1571,9 +1608,21 @@ i.arrow-down {
   font-size: 13px;
   font-weight: 900;
   transition: transform .2s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.visit-card>a:hover {
+.visit-card .visit-card-buttons a.visit-card__location-button {
+  background-image: url("assets/menu-images/map.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: var(--green-soft);
+  color: var(--green-deep);
+
+  /* Arabic: Push icon to the right */
+}
+
+.visit-card .visit-card-buttons>a:hover {
   transform: translateY(-3px);
 }
 
@@ -1688,7 +1737,7 @@ footer p {
   color: var(--green);
   font-size: 10px;
   font-weight: 950;
-  letter-spacing: .18em;
+  /* letter-spacing: .18em; */
 }
 
 .modal__title-row h2 {
@@ -1821,7 +1870,7 @@ footer p {
   }
 
   .brand strong {
-    font-size: 13px;
+    font-size: 20px;
   }
 
   .brand small {
@@ -2236,6 +2285,11 @@ footer p {
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
   }
+}
+
+@font-face {
+  font-family: 'myMoh';
+  src: url("assets/fonts/MOH/mohammad-bold-art-1.ttf");
 }
 
 @font-face {

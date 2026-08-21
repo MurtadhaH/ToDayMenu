@@ -1,12 +1,14 @@
 {
   "restaurant": {
-    "name": "كافتيريا تودي",
+    "name": "كافتيريا",
     "tagline": "طعام طازج، مزاج رائع.",
     "phoneDisplay": "0771 431 6036",
     "phoneLink": "+9647714316036",
     "whatsappLink": "9647714316036",
     "address": "📍داخل جامعة بغداد، قرب بناية رئاسة الجامعة.",
-    "currency": "د.ع"
+    "map": "https://maps.app.goo.gl/BCKfonZ8LkzhKhUT8",
+    "currency": "د.ع",
+    "time": "08:00 - 00:00"
   },
   "categories": [
     {
@@ -18,12 +20,13 @@
           "id": "special-breakfast-today",
           "special": true,
           "name": "سيت فطور تودي",
-          "price": "12000",
+          "price": "10000",
           "image": "../assets/menu-images/special-breakfast-today.jpeg",
           "description": "",
           "ingredients": [
             "بيض قلي",
             "طماطة قلي",
+            "عروك",
             "جبن كيري عدد 3",
             "قشطة",
             "لبنة",
@@ -364,6 +367,24 @@
           ]
         },
         {
+          "id": "mushroom-burger",
+          "name": "برجر لحم مشروم",
+          "price": "5000",
+          "image": "../assets/menu-images/mushroom-burger.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "خس",
+            "طماطة",
+            "فنكر",
+            "طرشي",
+            "بصل",
+            "فطر",
+            "جبن",
+            "صوص"
+          ]
+        },
+        {
           "id": "strips-sandwich",
           "name": "سندويج ستربس",
           "price": "3500",
@@ -426,6 +447,7 @@
           "ingredients": [
             "صدر دجاج",
             "خضار",
+            "جبن",
             "صوص"
           ]
         },
@@ -594,22 +616,9 @@
         {
           "id": "bechamel-chicken-pasta",
           "name": "معكرونة بشاميل ودجاج",
-          "price": "3000",
+          "price": "6000 - 3000",
           "image": "../assets/menu-images/bechamel-chicken-pasta.jpeg",
-          "description": "",
-          "ingredients": [
-            "معكرونة",
-            "كريمة طبخ",
-            "دجاج",
-            "جبن"
-          ]
-        },
-        {
-          "id": "large-bechamel-chicken-pasta",
-          "name": "معكرونة بشاميل ودجاج كبير",
-          "price": "6000",
-          "image": "../assets/menu-images/bechamel-chicken-pasta.jpeg",
-          "description": "",
+          "description": "صغير (3000)، كبير (6000)",
           "ingredients": [
             "معكرونة",
             "كريمة طبخ",
@@ -620,22 +629,9 @@
         {
           "id": "meat-pasta",
           "name": "معكرونة لحم",
-          "price": "5000",
+          "price": "8000 - 5000",
           "image": "../assets/menu-images/meat-pasta.jpeg",
-          "description": "",
-          "ingredients": [
-            "معكرونة",
-            "صوص احمر",
-            "لحم",
-            "جبن"
-          ]
-        },
-        {
-          "id": "large-meat-pasta",
-          "name": "معكرونة لحم كبير",
-          "price": "8000",
-          "image": "../assets/menu-images/meat-pasta.jpeg",
-          "description": "",
+          "description": "صغير (5000)، كبير (8000)",
           "ingredients": [
             "معكرونة",
             "صوص احمر",
@@ -798,8 +794,8 @@
           "description": "",
           "ingredients": [
             "تمن",
-            "صوص",
-            "خضروات"
+            "دجاج مقرمش",
+            "صوص الاعشاب"
           ]
         }
       ]
@@ -879,9 +875,109 @@
     },
     {
       "id": "weekly-meals",
-      "name": "الوجبات الاسبوعية",
+      "name": "الاطباق الاسبوعية",
       "icon": "../assets/menu-images/weekly-meals.jpeg",
-      "items": []
+      "items": [
+        {
+          "id": "iraqi-quzi",
+          "name": "قوزي لحم عراقي",
+          "days": "الأحد والثلاثاء",
+          "price": "12000 - 20000",
+          "image": "../assets/menu-images/iraqi-quzi.jpeg",
+          "description": "طبق 250 غم (12000)، طبق 500 غم (20000) ",
+          "ingredients": [
+            "لحم غم",
+            "تمن",
+            "مرق نوعين",
+            "طرشي",
+            "سلطة",
+            "لبن صغير",
+            "صمون"
+          ]
+        },
+        {
+          "id": "iraqi-meat-dulaimiya",
+          "name": "دليمية لحم عراقي",
+          "days": "الأحد والثلاثاء",
+          "price": "15000",
+          "image": "../assets/menu-images/iraqi-meat-dulaimiya.jpeg",
+          "description": "",
+          "ingredients": [
+            "لحم",
+            "تمن مع التشريب",
+            "مرق نوعين",
+            "طرشي",
+            "سلطة",
+            "لبن صغير"
+          ]
+        },
+        {
+          "id": "shawarma-tashreeb",
+          "name": "تشريب كص",
+          "days": "الأحد والثلاثاء",
+          "price": "8000",
+          "image": "../assets/menu-images/shawarma-tashreeb.jpeg",
+          "description": "",
+          "ingredients": [
+            "شاورما لحم",
+            "تشريب",
+            "طرشي",
+            "سلطة"
+          ]
+        },
+        {
+          "id": "rice-and-stew",
+          "name": "تمن ومرق",
+          "days": "الأحد والثلاثاء",
+          "price": "4000",
+          "image": "../assets/menu-images/rice-and-stew.jpeg",
+          "description": "",
+          "ingredients": [
+            "تمن",
+            "مرق نوعين",
+            "طرشي",
+            "سلطة",
+            "لبن صغير",
+            "صمون"
+          ]
+        },
+        {
+          "id": "dolma",
+          "name": "دولــمــة",
+          "days": "الاثنين",
+          "price": "6000",
+          "image": "../assets/menu-images/dolma.jpeg",
+          "description": "",
+          "ingredients": [
+            "طرشي",
+            "صوص",
+            "خبز عراقي"
+          ]
+        },
+        {
+          "id": "wednesday-weekly-meal",
+          "name": "وجبة يوم الأربعاء",
+          "days": "الاربعاء",
+          "price": "",
+          "image": "../assets/menu-images/wed-meal.jpeg",
+          "description": "يتم الإعلان عن الوجبة قبل يوم عبر الصفحة",
+          "ingredients": []
+        },
+        {
+          "id": "chicken-biryani",
+          "name": "برياني دجاج",
+          "days": "الخميس",
+          "price": "6000",
+          "image": "../assets/menu-images/chicken-biryani.jpeg",
+          "description": "متوفر يوم الخميس",
+          "ingredients": [
+            "دجاج",
+            "تمن",
+            "طرشي",
+            "لبن"
+          ]
+        }
+      ]
     },
     {
       "id": "appetizers",
@@ -889,27 +985,11 @@
       "icon": "../assets/menu-images/appetizers.jpeg",
       "items": [
         {
-          "id": "small-appetizer-plate",
-          "name": "طبق مقبلات صغير",
-          "price": "2500",
+          "id": "appetizer-plate",
+          "name": "طبق مقبلات",
+          "price": "5000 - 2500",
           "image": "../assets/menu-images/appetizer-plate.jpeg",
-          "description": "",
-          "ingredients": []
-        },
-        {
-          "id": "medium-appetizer-plate",
-          "name": "طبق مقبلات وسط",
-          "price": "3500",
-          "image": "../assets/menu-images/appetizer-plate.jpeg",
-          "description": "",
-          "ingredients": []
-        },
-        {
-          "id": "large-appetizer-plate",
-          "name": "طبق مقبلات كبير",
-          "price": "5000",
-          "image": "../assets/menu-images/appetizer-plate.jpeg",
-          "description": "",
+          "description": "صغير (2500)، وسط (3500)، كبير (5000)",
           "ingredients": []
         }
       ]
@@ -1220,6 +1300,348 @@
             "خضار",
             "صوص"
           ]
+        }
+      ]
+    },
+    {
+      "id": "hot-drinks",
+      "name": "المشروبات الساخنة",
+      "icon": "../assets/menu-images/hot-drinks.jpeg",
+      "items": [
+        {
+          "id": "coffee",
+          "name": "قهوة",
+          "price": "1000 - 3000",
+          "image": "../assets/menu-images/coffee.jpeg",
+          "description": "صغير (1000)، وسط (2000)، كبير (3000)",
+          "ingredients": []
+        },
+        {
+          "id": "nescafe",
+          "name": "نسكافيه",
+          "price": "1000 - 2000",
+          "image": "../assets/menu-images/nescafe.jpeg",
+          "description": "وسط (1000)، كبير (2000)",
+          "ingredients": []
+        },
+        {
+          "id": "cappuccino",
+          "name": "كابتشينو",
+          "price": "1000 - 2000",
+          "image": "../assets/menu-images/cappuccino.jpeg",
+          "description": "وسط (1000)، كبير (2000)",
+          "ingredients": []
+        },
+        {
+          "id": "hot-chocolate",
+          "name": "هوت شوكليت",
+          "price": "1000 - 2000",
+          "image": "../assets/menu-images/hot-chocolate.jpeg",
+          "description": "وسط (1000)، كبير (2000)",
+          "ingredients": []
+        },
+        {
+          "id": "chocolate-coffee",
+          "name": "قهوة جكليتية",
+          "price": "1500 - 4000",
+          "image": "../assets/menu-images/chocolate-coffee.jpeg",
+          "description": "صغير (1500)، وسط (3000)، كبير (4000)",
+          "ingredients": []
+        },
+        {
+          "id": "tea",
+          "name": "شاي",
+          "price": "500 - 1000",
+          "image": "../assets/menu-images/tea.jpeg",
+          "description": "صغير (500)، كبير (1000)",
+          "ingredients": []
+        },
+        {
+          "id": "karak-tea",
+          "name": "شاي كرك",
+          "price": "1000",
+          "image": "../assets/menu-images/karak-tea.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "tea-pot",
+          "name": "قوري شاي",
+          "price": "3000",
+          "image": "../assets/menu-images/tea-pot.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "iced-coffee",
+          "name": "آيس كوفي",
+          "price": "2500",
+          "image": "../assets/menu-images/iced-coffee.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "iced-latte",
+          "name": "آيس لاتيه",
+          "price": "2500",
+          "image": "../assets/menu-images/iced-latte.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "vanilla-latte",
+          "name": "فانيلا لاتيه",
+          "price": "2500",
+          "image": "../assets/menu-images/vanilla-latte.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "iced-cappuccino",
+          "name": "آيس كابتشينو",
+          "price": "2500",
+          "image": "../assets/menu-images/iced-cappuccino.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "iced-nescafe",
+          "name": "آيس نسكافيه",
+          "price": "2500",
+          "image": "../assets/menu-images/iced-nescafe.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "spanish-latte",
+          "name": "سبانش لاتيه",
+          "price": "2500",
+          "image": "../assets/menu-images/spanish-latte.jpeg",
+          "description": "",
+          "ingredients": []
+        }
+      ]
+    },
+    {
+      "id": "cold-drinks",
+      "name": "المشروبات الباردة",
+      "icon": "../assets/menu-images/cold-drinks.jpeg",
+      "items": [
+        {
+          "id": "orange-juice",
+          "name": "عصير برتقال",
+          "price": "1500",
+          "image": "../assets/menu-images/orange-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "orange-lemon-juice",
+          "name": "عصير برتقال وليمون",
+          "price": "1500",
+          "image": "../assets/menu-images/orange-lemon-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "lemon-juice",
+          "name": "عصير ليمون",
+          "price": "1500",
+          "image": "../assets/menu-images/lemon-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "lemon-mint-juice",
+          "name": "عصير ليمون ونعناع",
+          "price": "1500",
+          "image": "../assets/menu-images/lemon-mint-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "banana-juice",
+          "name": "عصير موز",
+          "price": "1500",
+          "image": "../assets/menu-images/banana-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "banana-strawberry-juice",
+          "name": "عصير موز وفراولة",
+          "price": "1500",
+          "image": "../assets/menu-images/banana-strawberry-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "strawberry-juice",
+          "name": "عصير فراولة",
+          "price": "1500",
+          "image": "../assets/menu-images/strawberry-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "kiwi-juice",
+          "name": "عصير كيوي",
+          "price": "1500",
+          "image": "../assets/menu-images/kiwi-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "pineapple-juice",
+          "name": "عصير اناناس",
+          "price": "1500",
+          "image": "../assets/menu-images/pineapple-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "watermelon-juice",
+          "name": "عصير بطيخ",
+          "price": "1500",
+          "image": "../assets/menu-images/watermelon-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "cocktail-juice",
+          "name": "عصير كوكتيل",
+          "price": "1500",
+          "image": "../assets/menu-images/cocktail-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "mango-juice",
+          "name": "عصير مانجو",
+          "price": "1500",
+          "image": "../assets/menu-images/mango-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "strawberry-mango-juice",
+          "name": "عصير فراولة ومانجو",
+          "price": "1500",
+          "image": "../assets/menu-images/strawberry-mango-juice.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "blue-mojito",
+          "name": "موهيتو بلو",
+          "price": "1500",
+          "image": "../assets/menu-images/blue-mojito.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "strawberry-mojito",
+          "name": "موهيتو فراولة",
+          "price": "1500",
+          "image": "../assets/menu-images/strawberry-mojito.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "berry-mojito",
+          "name": "موهيتو توت",
+          "price": "1500",
+          "image": "../assets/menu-images/berry-mojito.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "pineapple-mojito",
+          "name": "موهيتو اناناس",
+          "price": "1500",
+          "image": "../assets/menu-images/pineapple-mojito.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "strawberry-slush",
+          "name": "سلاش فراولة",
+          "price": "1000",
+          "image": "../assets/menu-images/strawberry-slush.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "apricot-slush",
+          "name": "سلاش مشمش",
+          "price": "1000",
+          "image": "../assets/menu-images/apricot-slush.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "blue-slush",
+          "name": "سلاش بلو",
+          "price": "1000",
+          "image": "../assets/menu-images/blue-slush.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "lemon-slush",
+          "name": "سلاش ليمون",
+          "price": "1000",
+          "image": "../assets/menu-images/lemon-slush.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "chocolate-milkshake",
+          "name": "ميلك شيك شوكولاته",
+          "price": "2500",
+          "image": "../assets/menu-images/chocolate-milkshake.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "oreo-milkshake",
+          "name": "ميلك شيك اوريو",
+          "price": "2500",
+          "image": "../assets/menu-images/oreo-milkshake.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "strawberry-milkshake",
+          "name": "ميلك شيك فراولة",
+          "price": "2500",
+          "image": "../assets/menu-images/strawberry-milkshake.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "ice-cream",
+          "name": "آيس كريم",
+          "price": "2000",
+          "image": "../assets/menu-images/ice-cream.jpeg",
+          "description": "4 سكوب",
+          "ingredients": []
+        },
+        {
+          "id": "lablabi",
+          "name": "لبلبي",
+          "price": "1000",
+          "image": "../assets/menu-images/lablabi.jpeg",
+          "description": "",
+          "ingredients": []
+        },
+        {
+          "id": "corn",
+          "name": "ذره",
+          "price": "1000",
+          "image": "../assets/menu-images/corn.jpeg",
+          "description": "",
+          "ingredients": []
         }
       ]
     }

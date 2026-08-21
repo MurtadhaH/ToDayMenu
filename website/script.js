@@ -269,6 +269,10 @@ function setupRestaurantInformation(data) {
     "restaurantAddress"
   ).textContent = restaurant.address;
 
+  document.getElementById(
+    "visitMapButton"
+  ).href = restaurant.map;
+
 
   const phoneHref =
     `tel:${restaurant.phoneLink}`;
@@ -605,6 +609,15 @@ function createMenuCard(
 
     <div class="menu-card__body">
 
+      ${item.days
+      ? `<div class="menu-card__days">
+             <span>🗓️</span>
+             <span>
+              ${escapeHTML(item.days)}
+             </span>
+           </div>`
+      : ""
+    }
       <div class="menu-card__top">
 
         <h4>
